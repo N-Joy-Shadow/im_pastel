@@ -18,16 +18,16 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
     };
 
     return (
-        <html lang="kr" className="">
+        <html lang="kr" className="min-h-full h-auto">
             <head>
                 <meta
                     name="theme-color"
-                    content="#eaddff"
+                    content="rgb(124, 134, 223)"
                     media="(prefers-color-scheme: light)"
                 />
                 <meta
                     name="theme-color"
-                    content="#eaddff"
+                    content="rgb(124, 134, 223)"
                     media="(prefers-color-scheme: dark)"
                 />
                 <title>San02</title>
