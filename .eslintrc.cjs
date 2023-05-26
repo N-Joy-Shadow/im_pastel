@@ -1,5 +1,6 @@
 module.exports = {
-  rules: {
-    'react/jsx-key': 'off'
-  },
-}
+  extends: [
+    //...
+    'plugin:@next/next/recommended',
+  ],
+};
