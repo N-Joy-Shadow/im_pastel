@@ -1,7 +1,11 @@
 export default function Home() {
     return (
-        <div>
-            <p>유니</p>
+        <div className="text-center">
+            <h1>유니</h1>
+            <div className="flex">
+                <img src="/static/yuni.png"></img>
+                <p>Ayatsuno Yuni</p>
+            </div>
         </div>
     )
 }

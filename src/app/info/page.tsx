@@ -30,7 +30,7 @@ export default function Home() {
                 viewBox="0 0 251 1"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute left-[28.1px] top-[60.1px]"
+                className="absolute left-0 top-[60.1px] px-12"
                 preserveAspectRatio="xMidYMid meet"
               >
                 <line
@@ -65,7 +65,7 @@ export default function Home() {
                 viewBox="0 0 251 1"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute left-[28.1px] top-[60.1px]"
+                className="absolute left-0 top-[60.1px] px-12"
                 preserveAspectRatio="xMidYMid meet"
               >
                 <line
@@ -78,7 +78,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img className='w-auto rounded-2xl' src='/static/canna.png'></img>
+                <img className='w-auto rounded-2xl' src='/static/kanna.png'></img>
               </div>
             </div>
           </Link>

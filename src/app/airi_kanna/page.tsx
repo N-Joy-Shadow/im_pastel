@@ -1,7 +1,12 @@
 export default function Home() {
     return (
-        <div>
-            <p>칸나</p>
+        <div className="text-center">
+            <h1>칸나</h1>
+            <div className="flex">
+                <img src="/static/kanna.png"></img>
+                <p>Airi Kanna</p>
+            </div>
+
         </div>
     )
 }
