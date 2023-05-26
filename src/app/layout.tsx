@@ -22,7 +22,7 @@ export default function RootLayout({
     };
 
     return (
-        <html lang="en" className="h-full">
+        <html lang="kr" className="h-full">
             <head>
                 <meta
                     name="theme-color"
@@ -36,8 +36,7 @@ export default function RootLayout({
                 />
                 <title>San02</title>
             </head>
-            <body className="h-full">
-
+            <body className="h-full bg-white font-bold">
                 <nav className="bg-[#eaddff] w-full ">
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                         <Link href="/" className="flex items-center">
