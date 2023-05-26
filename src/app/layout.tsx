@@ -99,16 +99,16 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                         className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold  md:border-0  md:p-0  "
                                         aria-current="page"
                                     >
-                                        Home
+                                        HOME
                                     </Link>
                                 </li>
                                 <p className="hidden text-black md:block cursor-default">|</p>
                                 <li>
                                     <Link
-                                        href="/test"
+                                        href="/live"
                                         className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold  md:border-0  md:p-0  "
                                     >
-                                        test
+                                        LIVE
                                     </Link>
                                 </li>
 
@@ -118,7 +118,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                         href="/info"
                                         className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold  md:border-0  md:p-0  "
                                     >
-                                        info
+                                        INFO
                                     </Link>
                                 </li>
                             </ul>
