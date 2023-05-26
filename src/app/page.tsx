@@ -1,15 +1,9 @@
-import './globals.css'
-
-
-
 export default function Home() {
-
-  return (
-    <main>
-      <div>
-        <p>main?</p>
-      </div>
-    </main>
-  );
+    return (
+        <main>
+            <div>
+                <p>main</p>
+            </div>
+        </main>
+    )
 }
-

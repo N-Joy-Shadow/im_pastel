@@ -22,7 +22,7 @@ export default function RootLayout({
     };
 
     return (
-        <html lang="kr" className="h-full">
+        <html lang="kr" className="">
             <head>
                 <meta
                     name="theme-color"
@@ -36,8 +36,9 @@ export default function RootLayout({
                 />
                 <title>San02</title>
             </head>
-            <body className="h-full bg-white font-bold">
-                <nav className="bg-[#eaddff] w-full ">
+            <body className=" font-bold">
+                {/* <nav className="bg-[#eaddff] w-full border-white"> */}
+                <nav className=" w-full  bg-white">
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                         <Link href="/" className="flex items-center">
 
@@ -95,7 +96,7 @@ export default function RootLayout({
                                 chgVisl();
                             }}
                         >
-                            <ul className="font-bold flex flex-col p-4 md:p-0 mt-4   rounded-lg bg-[#eaddff] md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-[#eaddff] ">
+                            <ul className="font-bold flex flex-col p-4 md:p-0 mt-4   rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
                                 <li>
                                     <Link
                                         href="/"
@@ -118,10 +119,10 @@ export default function RootLayout({
                                 <p className="hidden text-black md:block cursor-default">|</p>
                                 <li>
                                     <Link
-                                        href="/calendar"
+                                        href="/info"
                                         className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold  md:border-0  md:p-0  "
                                     >
-                                        NotFound
+                                        info
                                     </Link>
                                 </li>
                             </ul>
