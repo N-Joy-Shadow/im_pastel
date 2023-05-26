@@ -1,5 +1,4 @@
-import React from 'react'
-import './App.css'
+import './globals.css'
 
 
 
@@ -11,6 +10,6 @@ export default function Home() {
         <p>main?</p>
       </div>
     </main>
-  )
+  );
 }
 
