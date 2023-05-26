@@ -4,11 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 
 
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children, }: { children: React.ReactNode; }) {
     const [visl, setVisual] = useState<string>();
     if (visl === undefined) {
         setVisual("hidden");

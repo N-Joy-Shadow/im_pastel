@@ -1,18 +1,14 @@
 module.exports = {
   extends: [
-    //...
     'plugin:@next/next/recommended',
   ],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     sourceType: "module",
-    ecmaVersion: "latest",
+    ecmaVersion: 2022,
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
+      tsx: true
     }
   },
-  rules: {
-    //...
-    'react/react-in-jsx-scope': 'off',
-
-  }
 };
