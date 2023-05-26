@@ -5,7 +5,10 @@ module.exports = {
   ],
   parserOptions: {
     sourceType: "module",
-    ecmaVersion: "latest"
+    ecmaVersion: "latest",
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   rules: {
     //...
