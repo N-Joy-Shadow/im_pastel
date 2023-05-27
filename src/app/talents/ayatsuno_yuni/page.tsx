@@ -8,9 +8,9 @@ export default function Home() {
                     className="w-[400px] xl:w-[1600px] min-h-[1000px] h-auto relative  rounded-2xl bg-white mx-4 mt-5"
                     style={{ boxShadow: "gray 0px 3px 6px 0px" }}
                 >
-                    <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
+                    <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12 ">
 
-                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552]">
+                        <p className="xl:hover:cursor-default flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552] ">
                             Ayatsuno Yuni | 아야츠노 유니
                         </p>
                     </div>
@@ -35,9 +35,9 @@ export default function Home() {
                         <img src="/static/yuni_body.png" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded " width="240px" ></img>
 
                         <div className=" xl:block  mt-16 xl:ml-20">
-                            <div className=" text-[2.25rem] xl:text-7xl text-[#7C86DF]">아야츠노 유니</div>
-                            <div className="text-[#7C86DF] mt-4">Ayatsuno Yuni</div>
-                            <div className="text-center mx-4 xl:text-left mt-8 xl:ml-8 text-[#7C86DF] font-bold text-lg font-sunf">
+                            <div className=" text-[2.25rem] xl:text-7xl text-[#7C86DF] xl:hover:cursor-default">아야츠노 유니</div>
+                            <div className="text-[#7C86DF] mt-4 xl:hover:cursor-default">Ayatsuno Yuni</div>
+                            <div className="text-center mx-4 xl:text-left mt-8 xl:ml-8 text-[#7C86DF] font-bold text-lg font-sunf xl:hover:cursor-default">
                                 타락을 꿈꾸는 순수의 상징, 유니콘<br />
 
                                 다른 유니콘들이 멸망을 향해갈 때, 혼자 잠들어 있었던 유니.<br />
