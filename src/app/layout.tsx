@@ -36,7 +36,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet" />
             </head>
-            <body className=" font-bold">
+            <body className=" font-bold h-full">
                 {/* <nav className="bg-[#eaddff] w-full border-white"> */}
                 <nav className=" w-full  bg-[#C4CBF5] relative z-40">
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between xl:justify-evenly mx-auto p-4">
@@ -160,6 +160,19 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                         className="block py-2 pl-3 pr-4  rounded font-bold  md:border-0  md:p-0 z-[-1]"
                                     >
                                         TALENTS
+                                    </Link>
+                                </li>
+                                <p className="hidden xl:p-[0.7rem] md:block cursor-default xxxx">|</p>
+                                <li
+                                    className="xl:p-[0.7rem] xl:hover:bg-slate-400 transition-all xl:hover:drop-shadow-none rounded drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] xxx z-0"
+                                    onClick={() => {
+                                        chgVisl();
+                                    }}>
+                                    <Link
+                                        href="/tweet"
+                                        className="block py-2 pl-3 pr-4  rounded font-bold  md:border-0  md:p-0 z-[-1]"
+                                    >
+                                        TWEETS
                                     </Link>
                                 </li>
                             </ul>

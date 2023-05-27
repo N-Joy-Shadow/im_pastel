@@ -1,5 +1,5 @@
 export default function Home() {
-    const content = " I'm Pastel은 버츄얼 아이돌 그룹 '스텔라이브'의 팬 페이지 입니다. ";
+    const content = " I'm Pastel은 버츄얼 아이돌 그룹 '스텔라이브'의 팬 사이트 입니다. ";
     const asd = "본 사이트는 수익창추릉ㄹ ";
     const contentClassName = "font-bold font-sans text-6xl";
     const contentClassName2 = "font-bold font-sans text-2xl";
