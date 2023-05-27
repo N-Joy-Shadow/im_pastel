@@ -48,3 +48,16 @@ blockquote p::after {
     margin-left: 0px !important;
   }
 }
+.qq {
+  color: white;
+  text-shadow: rgb(0, 0, 0) 3px 3px 0px;
+}
+
+.qw {
+  color: rgb(255, 255, 255);
+  /* text-shadow: rgb(240, 240, 240) 1px 1px 0px; */
+}
+
+.text_div {
+  background-color: rgb(0 0 0 / 27%);
+}

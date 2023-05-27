@@ -31,7 +31,10 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                     content="rgb(124, 134, 223)"
                     media="(prefers-color-scheme: dark)"
                 />
-                <title>San02</title>
+                <title>I'm Pastel</title>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet" />
             </head>
             <body className=" font-bold">
                 {/* <nav className="bg-[#eaddff] w-full border-white"> */}
@@ -119,6 +122,14 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                                 </Link>
                                             </li>
                                             <hr />
+                                            <li className="font-sunf">
+                                                <Link onClick={() => {
+                                                    chgVisl();
+                                                }} href="/live/gangg" className="px-6 block py-4 text-[#8182B8] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                    사장님
+                                                </Link>
+                                            </li>
+                                            <hr />
                                             <li className="">
                                                 <Link onClick={() => {
                                                     chgVisl();
@@ -145,10 +156,10 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                         chgVisl();
                                     }}>
                                     <Link
-                                        href="/info"
+                                        href="/talents"
                                         className="block py-2 pl-3 pr-4  rounded font-bold  md:border-0  md:p-0 z-[-1]"
                                     >
-                                        INFO
+                                        TALENTS
                                     </Link>
                                 </li>
                             </ul>

@@ -22,7 +22,7 @@ export default function Test() {
                         viewBox="0 0 251 1"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-[28.1px] top-[60.1px]"
+                        className="absolute left-0 top-[60.1px] px-12"
                         preserveAspectRatio="xMidYMid meet"
                     >
                         <line

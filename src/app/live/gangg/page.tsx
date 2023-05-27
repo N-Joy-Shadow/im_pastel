@@ -10,8 +10,8 @@ export default function Test() {
                 >
                     <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552]">
-                            Ayatsuno Yuni
+                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552] font-sunf">
+                            사장님
                         </p>
                     </div>
                     <svg
@@ -34,7 +34,7 @@ export default function Test() {
 
                     <div className="flex inherit justify-center items-center text-center mx-auto w-[400px] twitch-live-player top-[77px] xl:h-[600px]">
 
-                        <iframe className="h-[300px] xl:h-[565px]" src="https://player.twitch.tv/?channel=ayatsunoyuni_stellive&parent=pastel.im" height="579" width="1030" allowFullScreen={true}></iframe>
+                        <iframe className="h-[300px] xl:h-[565px]" src="https://player.twitch.tv/?channel=rkdwl12&parent=pastel.im" height="579" width="1030" allowFullScreen={true}></iframe>
                     </div>
                 </div>
             </div>
