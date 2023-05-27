@@ -5,18 +5,18 @@ export default function Home() {
     const contentClassName2 = "font-bold font-sans text-2xl";
     return (
         <main className="h-full">
-
-            <div className="hidden xl:block mt-[100px] ml-[100px]">
+            <img src="/static/stellive.svg" className="mt-[-60px]  xl:ml-20 xl:mt-[-110px] w-[300px] xl:w-[500px] h-auto absolute z-[-1]"></img>
+            <div className="hidden xl:block mt-[260px] ml-[130px]">
                 <figure className="w-[1000px]  px-[2.25rem]">
-                    <p className={contentClassName} >I'm Pastel</p>
+                    <p className={`${contentClassName}`} >I'm Pastel</p>
                     <blockquote cite="https://pastel.im/">
                         <p className={contentClassName2}>{content}</p>
                     </blockquote>
                 </figure>
             </div>
-            <div className="block xl:hidden mt-[50px]">
+            <div className="block xl:hidden mt-[140px] ml-[30px]">
                 <figure className="w-[400px]  px-[2.25rem]">
-                    <p className={contentClassName}>I'm Pastel</p>
+                    <p className={`${contentClassName}`}>I'm Pastel</p>
                     <blockquote cite="https://pastel.im/">
                         <p className={contentClassName2}>{content}</p>
                     </blockquote>

@@ -1,7 +1,8 @@
 "use client"
-import React, { useState } from "react";
+import React, { Fragment, useEffect, useRef, useState } from "react";
 import "./globals.css";
 import Link from "next/link";
+import { Menu, Transition } from '@headlessui/react'
 
 
 export default function RootLayout({ children, }: { children: React.ReactNode; }) {
@@ -34,9 +35,9 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
             </head>
             <body className=" font-bold">
                 {/* <nav className="bg-[#eaddff] w-full border-white"> */}
-                <nav className=" w-full  bg-white">
-                    <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                        <Link href="/" className="flex items-center">
+                <nav className=" w-full  bg-[#C4CBF5] relative z-40">
+                    <div className="max-w-screen-xl flex flex-wrap items-center justify-between xl:justify-evenly mx-auto p-4">
+                        <Link href="/" className="flex items-center xl:left-[-50px] xl:relative ">
 
                             {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +57,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                             >
                                 <path fill="rgb(255,247,0)" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
                             </svg>
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap text-black font-['Helvetica'] mt-1">
+                            <span className="self-center  text-2xl font-semibold whitespace-nowrap text-white font-['Helvetica'] mt-1 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
                                 I'm Pastel
                             </span>
                         </Link>
@@ -87,45 +88,76 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                         </button>
                         <div
                             id="navbar-solid-bg"
-                            className={`${visl} w-full md:block md:w-auto navbar-solid-bg transition-all`}
-                            onClick={() => {
-                                chgVisl();
-                            }}
+                            className={`${visl} w-full md:block md:w-auto navbar-solid-bg transition-all xl:right-[-50px] xl:relative`}
                         >
-                            <ul className="font-bold flex flex-col p-4 md:p-0 mt-4   rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:border-0 ">
-                                <li>
+                            <ul className="font-bold flex flex-col p-4 md:p-0 mt-4  text-white rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 z-0">
+                                <li
+                                    className="xl:p-[0.7rem] xl:hover:bg-slate-400 transition-all xl:hover:drop-shadow-none rounded drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+                                    onClick={() => {
+                                        chgVisl();
+                                    }}>
                                     <Link
                                         href="/"
-                                        className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold  md:border-0  md:p-0  "
+                                        className="block py-2 pl-3 pr-4 xxx rounded font-bold  md:border-0  md:p-0  "
                                         aria-current="page"
                                     >
                                         HOME
                                     </Link>
                                 </li>
-                                <p className="hidden text-black md:block cursor-default">|</p>
-                                <li>
-                                    <Link
-                                        href="/live"
-                                        className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold  md:border-0  md:p-0  "
-                                    >
-                                        LIVE
-                                    </Link>
+                                <p className="hidden xl:p-[0.7rem] md:block cursor-default xxxx">|</p>
+                                <li className="z-10 group relative dropdown xl:p-[0.7rem] xl:hover:bg-slate-400 transition-all xl:hover:drop-shadow-none rounded drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] xxx">
+
+                                    <p className="block py-2 pl-3 pr-4 transition rounded font-bold md:border-0  md:p-0 xl:hover:cursor-pointer xl:hover:drop-shadow-none ">LIVE</p>
+
+                                    <div className="group-hover:opacity-100 group-hover:block transition duration-200 dropdown-menu absolute opacity-0 hidden h-auto z-40  w-[250px] xl:left-[-30px] xl:top-[45px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                                        <ul className="top-0 bg-white shadow px-6 py-8 rounded-md text-left z-40">
+                                            <li className="">
+                                                <Link onClick={() => {
+                                                    chgVisl();
+                                                }} href="/live" className="px-6 block py-4 text-[#201e42] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                    ALL
+                                                </Link>
+                                            </li>
+                                            <hr />
+                                            <li className="">
+                                                <Link onClick={() => {
+                                                    chgVisl();
+                                                }} href="/live/kanna" className="px-6 block py-4 text-[#373584] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                    Airi Kanna
+                                                </Link>
+                                            </li>
+                                            <hr />
+                                            <li className="">
+                                                <Link onClick={() => {
+                                                    chgVisl();
+                                                }} href="/live/yuni" className="px-6 block py-4 text-[#B77DE4] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                    Ayatsuno Yuni
+                                                </Link>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
 
-                                <p className="hidden text-black md:block cursor-default">|</p>
-                                <li>
+                                <p className="hidden xl:p-[0.7rem] md:block cursor-default xxxx">|</p>
+                                <li
+                                    className="xl:p-[0.7rem] xl:hover:bg-slate-400 transition-all xl:hover:drop-shadow-none rounded drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] xxx z-0"
+                                    onClick={() => {
+                                        chgVisl();
+                                    }}>
                                     <Link
                                         href="/info"
-                                        className="block py-2 pl-3 pr-4 text-gray-900 rounded font-bold  md:border-0  md:p-0  "
+                                        className="block py-2 pl-3 pr-4  rounded font-bold  md:border-0  md:p-0 z-[-1]"
                                     >
                                         INFO
                                     </Link>
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </nav>
                 {children}
+                <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
             </body>
         </html>
     )

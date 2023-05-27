@@ -31,3 +31,20 @@ blockquote p::before {
 blockquote p::after {
   content: "\201D";
 }
+
+@media (min-width: 1280px) {
+  .twitch-live {
+    width: 1030px;
+  }
+  .twitch-live-player {
+    width: 900px;
+  }
+  .xxx {
+    margin-left: 0px !important;
+    min-width: 90px !important;
+    text-align: center !important;
+  }
+  .xxxx {
+    margin-left: 0px !important;
+  }
+}
