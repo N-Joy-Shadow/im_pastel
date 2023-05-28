@@ -31,7 +31,16 @@ blockquote p::before {
 blockquote p::after {
   content: "\201D";
 }
+.article-topbar {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.article-body {
+  padding-left: 40px;
+  padding-right: 40px;
+}
 @media (min-width: 1280px) {
   .twitch-live {
     width: 1030px;
@@ -46,6 +55,10 @@ blockquote p::after {
   }
   .xxxx {
     margin-left: 0px !important;
+  }
+  .article-topbar {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 .qq {

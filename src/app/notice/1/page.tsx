@@ -1,5 +1,7 @@
 const title = "Open! ⭐I'm Pastel"
 const date = "2023.05.27. 23:52"
+
+import '../../globals.css'
 export default function Home() {
     return (
         <div className="text-center flex m-auto justify-center mt-4 z-10">
@@ -8,7 +10,7 @@ export default function Home() {
                     className=" w-[400px] lg:w-[600px] xl:w-[1200px] min-h-[500px] h-auto relative pb-[92px] rounded-2xl bg-white mx-4 mt-5"
                     style={{ boxShadow: "gray 0px 3px 6px 0px" }}
                 >
-                    <div className="flex justify-between items-center xl:w-full absolute left-0 top-6 px-12 ">
+                    <div className="article-topbar flex justify-between items-center xl:w-full absolute left-0 top-6  ">
 
                         <p className="xl:hover:cursor-default  text-sm font-semibold text-center text-[#7C86DF] ">
                             Notice
@@ -37,7 +39,7 @@ export default function Home() {
                             stroke-width="0.8"
                         />
                     </svg>
-                    <div className="block xl:flex-none inherit justify-center text-center mt-[70px] xl:mt-0 xl:top-[97px]">
+                    <div className="article-body block xl:flex-none inherit justify-center text-center mt-[70px] xl:mt-0 xl:top-[97px]">
                         <p className="text-[#666] font-sans font-bold">
                             I'm Pastel 사이트가 오픈되었습니다.
                         </p>

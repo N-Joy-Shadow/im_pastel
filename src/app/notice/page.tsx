@@ -7,7 +7,7 @@ import '../globals.css'
 export default function Home() {
     const router = useRouter();
     const [articles, setArticles] = useState([<></>]);
-    const tdStyle = "xl:pl-20 xl:w-[140px]"
+    const tdStyle = "pl-6 xl:pl-20 xl:w-[140px]"
     useEffect(() => {
         async function initProducts() {
             try {
@@ -20,14 +20,14 @@ export default function Home() {
                                 <tr className={`xl:hover:cursor-pointer h-[4rem] xl:hover:bg-[#7c86df1e] transition-all text-[#666] font-sans font-bold`} onClick={() => { router.push(`/notice/${item.Num}/`) }}>
 
 
-                                    <td key={`${item.Num}${item.Title}1`} className={`${tdStyle} xl:ml-[2rem] xl:w-[2rem] `}>
+                                    <td key={`${item.Num}${item.Title}1`} className={`${tdStyle}xl:ml-[2rem] xl:w-[2rem] text-sm xl:text-lg`}>
                                         {item.Num}
                                     </td>
-                                    <td key={`${item.Num}${item.Title}2`} className="xl:pl-[8rem] text-left">
+                                    <td key={`${item.Num}${item.Title}2`} className="pl-[2rem] xl:pl-[8rem] text-left text-sm xl:text-[16px]">
                                         {item.Title}
                                     </td>
 
-                                    <td key={`${item.Num}${item.Title}3`} className="xl:ml-[2rem] ">
+                                    <td key={`${item.Num}${item.Title}3`} className="xl:ml-[2rem]  text-[10px] xl:text-sm">
                                         {item.Date}
                                     </td>
                                 </tr>
@@ -47,14 +47,14 @@ export default function Home() {
                                 <tr className={`xl:hover:cursor-pointer h-[4rem] xl:hover:bg-[#7c86df1e] transition-all text-[#666] font-sans font-bold`} onClick={() => { router.push(`/notice/${item.Num}/`) }}>
 
 
-                                    <td key={`${item.Num}${item.Title}1`} className={`${tdStyle} xl:ml-[2rem] xl:w-[2rem] `}>
+                                    <td key={`${item.Num}${item.Title}1`} className={`${tdStyle} xl:ml-[2rem] xl:w-[2rem] text-sm xl:text-lg`}>
                                         {item.Num}
                                     </td>
-                                    <td key={`${item.Num}${item.Title}2`} className="xl:pl-[8rem] text-left">
+                                    <td key={`${item.Num}${item.Title}2`} className="pl-[2rem]  xl:pl-[8rem] text-left text-sm xl:text-[16px]">
                                         {item.Title}
                                     </td>
 
-                                    <td key={`${item.Num}${item.Title}3`} className="xl:ml-[2rem] ">
+                                    <td key={`${item.Num}${item.Title}3`} className=" xl:ml-[2rem] text-[8px] xl:text-sm">
                                         {item.Date}
                                     </td>
                                 </tr>
@@ -100,7 +100,7 @@ export default function Home() {
                         />
                     </svg>
                     <div className="inherit mt-[70px] xl:mt-0 xl:top-[77px]">
-                        <table className="xl:w-[1100px] mx-auto">
+                        <table className="w-full xl:w-[1100px] mx-auto">
                             <tr className="text-[#666] font-sans font-bold">
                                 <th className={`${tdStyle} xl:pb-2`}>번호</th>
                                 <th className="xl:pb-2">제목</th>
