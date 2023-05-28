@@ -10,7 +10,7 @@ export default function Home() {
     const tdStyle = "xl:pl-20 xl:w-[140px]"
     useEffect(() => {
         async function initProducts() {
-            await fetch(`http://localhost/notice?get=true`)
+            await fetch(`https://pastel.im/notice?get=true`)
                 .then(response => response.json())
                 .then(response => {
                     const value = response.reverse().map((item: any) => {
