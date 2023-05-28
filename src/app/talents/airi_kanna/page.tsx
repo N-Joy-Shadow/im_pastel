@@ -1,5 +1,5 @@
 export default function Home() {
-    const a_style = "w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#7C86DF] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#7C86DF] xl:hover:text-white"
+    const a_style = "w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#373584] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#373584] xl:hover:text-white"
     const a_dummy = "w-[150px] h-[50px] px-[25px] py-[10px] text-center"
     return (
         <div className="text-center flex m-auto justify-center mt-4 z-10">
@@ -10,7 +10,7 @@ export default function Home() {
                 >
                     <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                        <p className="xl:hover:cursor-default flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552]">
+                        <p className="xl:hover:cursor-default flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#373584]">
                             Airi Kanna | 아이리 칸나
                         </p>
                     </div>
@@ -35,9 +35,9 @@ export default function Home() {
                         <img src="/static/kanna_body.png" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded " width="240px" ></img>
 
                         <div className=" xl:block  mt-16 xl:ml-20">
-                            <div className=" text-[2.25rem] xl:text-7xl text-[#7C86DF] xl:hover:cursor-default">아이리 칸나</div>
-                            <div className="text-[#7C86DF] mt-4 xl:hover:cursor-default">Airi Kanna</div>
-                            <div className="text-center mx-4 xl:text-left mt-8 xl:ml-14 text-[#7C86DF] font-bold text-lg font-sunf xl:hover:cursor-default">
+                            <div className=" text-[2.25rem] xl:text-7xl text-[#373584] xl:hover:cursor-default">아이리 칸나</div>
+                            <div className="text-[#373584] mt-4 xl:hover:cursor-default">Airi Kanna</div>
+                            <div className="text-center mx-4 xl:text-left mt-8 xl:ml-14 text-[#373584] font-bold text-lg font-sunf xl:hover:cursor-default">
                                 용궁의 황녀<br />
 
                                 용궁의 부흥을 위해 지구를 찾아왔다.<br />

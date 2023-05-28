@@ -10,7 +10,7 @@ export default function Home() {
                 >
                     <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12 ">
 
-                        <p className="xl:hover:cursor-default flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552] ">
+                        <p className="xl:hover:cursor-default flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#7C86DF] ">
                             Ayatsuno Yuni | 아야츠노 유니
                         </p>
                     </div>

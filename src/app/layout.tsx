@@ -108,6 +108,19 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                     </Link>
                                 </li>
                                 <p className="hidden xl:p-[0.7rem] md:block cursor-default xxxx">|</p>
+                                <li
+                                    className="xl:p-[0.7rem] xl:hover:bg-slate-400 transition-all xl:hover:drop-shadow-none rounded drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] xxx z-0"
+                                    onClick={() => {
+                                        chgVisl();
+                                    }}>
+                                    <Link
+                                        href="/notice"
+                                        className="block py-2 pl-3 pr-4  rounded font-bold  md:border-0  md:p-0 z-[-1]"
+                                    >
+                                        NOTICE
+                                    </Link>
+                                </li>
+                                <p className="hidden xl:p-[0.7rem] md:block cursor-default xxxx">|</p>
                                 <li className="z-10 group relative dropdown xl:p-[0.7rem] xl:hover:bg-slate-400 transition-all xl:hover:drop-shadow-none rounded drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] xxx">
 
                                     <p className="block py-2 pl-3 pr-4 transition rounded font-bold md:border-0  md:p-0 xl:hover:cursor-pointer xl:hover:drop-shadow-none ">LIVE</p>

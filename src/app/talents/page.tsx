@@ -19,7 +19,7 @@ export default function Home() {
             >
               <div className={`flex justify-between items-center ${imgWidth} absolute left-0 top-6 px-12`}>
 
-                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552]">
+                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#373584]">
                   Airi Kanna
                 </p>
               </div>
@@ -55,7 +55,7 @@ export default function Home() {
             >
               <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552]">
+                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#7C86DF]">
                   Ayatsuno Yuni
                 </p>
               </div>
