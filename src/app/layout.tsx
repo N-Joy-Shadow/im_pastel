@@ -181,12 +181,12 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                     onClick={() => {
                                         chgVisl();
                                     }}>
-                                    <Link
+                                    <a
                                         href="/tweet"
                                         className="block py-2 pl-3 pr-4  rounded font-bold  md:border-0  md:p-0 z-[-1]"
                                     >
                                         TWEETS
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
 

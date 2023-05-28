@@ -10,32 +10,62 @@ export default function Home() {
     const tdStyle = "xl:pl-20 xl:w-[140px]"
     useEffect(() => {
         async function initProducts() {
-            await fetch(`https://pastel.im/notice?get=true`)
-                .then(response => response.json())
-                .then(response => {
-                    const value = response.reverse().map((item: any) => {
-                        return (
-                            <tr className={`xl:hover:cursor-pointer h-[4rem] xl:hover:bg-[#7c86df1e] transition-all text-[#666] font-sans font-bold`} onClick={() => { router.push(`/notice/${item.Num}/`) }}>
+            try {
+
+                await fetch(`https://pastel.im/notice?get=true`)
+                    .then(response => response.json())
+                    .then(response => {
+                        const value = response.reverse().map((item: any) => {
+                            return (
+                                <tr className={`xl:hover:cursor-pointer h-[4rem] xl:hover:bg-[#7c86df1e] transition-all text-[#666] font-sans font-bold`} onClick={() => { router.push(`/notice/${item.Num}/`) }}>
 
 
-                                <td key={`${item.Num}${item.Title}1`} className={`${tdStyle} xl:ml-[2rem] xl:w-[2rem] `}>
-                                    {item.Num}
-                                </td>
-                                <td key={`${item.Num}${item.Title}2`} className="xl:pl-[8rem] text-left">
-                                    {item.Title}
-                                </td>
+                                    <td key={`${item.Num}${item.Title}1`} className={`${tdStyle} xl:ml-[2rem] xl:w-[2rem] `}>
+                                        {item.Num}
+                                    </td>
+                                    <td key={`${item.Num}${item.Title}2`} className="xl:pl-[8rem] text-left">
+                                        {item.Title}
+                                    </td>
 
-                                <td key={`${item.Num}${item.Title}3`} className="xl:ml-[2rem] ">
-                                    {item.Date}
-                                </td>
-                            </tr>
+                                    <td key={`${item.Num}${item.Title}3`} className="xl:ml-[2rem] ">
+                                        {item.Date}
+                                    </td>
+                                </tr>
 
-                        )
+                            )
+                        })
+                        setArticles(value);
+                        console.log(value);
                     })
-                    setArticles(value);
-                    console.log(value);
-                })
-                .catch(err => console.error(err));
+                    .catch(err => console.error(err));
+            } catch (err) {
+                await fetch(`http://localhost/notice?get=true`)
+                    .then(response => response.json())
+                    .then(response => {
+                        const value = response.reverse().map((item: any) => {
+                            return (
+                                <tr className={`xl:hover:cursor-pointer h-[4rem] xl:hover:bg-[#7c86df1e] transition-all text-[#666] font-sans font-bold`} onClick={() => { router.push(`/notice/${item.Num}/`) }}>
+
+
+                                    <td key={`${item.Num}${item.Title}1`} className={`${tdStyle} xl:ml-[2rem] xl:w-[2rem] `}>
+                                        {item.Num}
+                                    </td>
+                                    <td key={`${item.Num}${item.Title}2`} className="xl:pl-[8rem] text-left">
+                                        {item.Title}
+                                    </td>
+
+                                    <td key={`${item.Num}${item.Title}3`} className="xl:ml-[2rem] ">
+                                        {item.Date}
+                                    </td>
+                                </tr>
+
+                            )
+                        })
+                        setArticles(value);
+                        console.log(value);
+                    })
+                    .catch(err => console.error(err));
+            }
         }
         initProducts();
     }, []);
