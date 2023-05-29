@@ -6,15 +6,13 @@
 
 ## Installation
 
-need to have `Node.js` and `PNPM` installed.
-
 1. Clone this repository:
 
    ```bash
    git clone https://github.com/Ich-mag-dich/im_pastel.git
    cd im_pastel
-   pnpm install
-   pnpm dev
+   npm install
+   npm run dev
    ```
 
 2. Open your browser and visit <http://localhost:3000> to view the I'm Pastel website.
