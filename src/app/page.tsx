@@ -25,8 +25,18 @@ export default function Home() {
                 </div>
 
             </div>
-            <div className=" absolute">
-                asd
+            <div className="hidden xl:block float-right xl:mt-[-450px] xl:mr-[120px]">
+                <div className="text-center flex m-auto justify-center mt-4 z-10">
+                    <div className='flex justify-center  flex-wrap my-[2.25rem]'>
+                        <div
+                            className=" w-[400px] lg:w-[600px] xl:w-[800px] min-h-[500px] pt-[50px] inline-block h-auto xl:my-auto relative rounded-2xl bg-white mx-4 mt-5"
+                            style={{ boxShadow: "gray 0px 3px 6px 0px" }}
+                        >
+                            <iframe className="m-auto w-[300px] xl:w-[710px] xl:px-0 " width="710" height="400" src="https://www.youtube-nocookie.com/embed/kPdB6iGYBBc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     )
