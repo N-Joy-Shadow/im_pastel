@@ -23,6 +23,10 @@ export default function Home() {
                         </blockquote>
                     </figure>
                 </div>
+
+            </div>
+            <div className=" absolute">
+                asd
             </div>
         </main>
     )

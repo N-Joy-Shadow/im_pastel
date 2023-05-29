@@ -1,3 +1,6 @@
+"use client"
+
+
 export default function Tweet() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen max-w-[100vw] py-2">
@@ -16,6 +19,7 @@ export default function Tweet() {
                 <div className="my-2 xl:mx-2">
                     <a className="twitter-timeline mx-2" data-chrome="noscrollbar" data-lang="ko" data-width="380" data-height="700" href="https://twitter.com/AiriKanna_">Tweets by AiriKanna_</a> <script async src="https://platform.twitter.com/widgets.js"></script>
                 </div>
+
 
             </main>
         </div>

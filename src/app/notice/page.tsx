@@ -12,9 +12,16 @@ export default function Home() {
         async function initProducts() {
             try {
 
-                await fetch(`https://pastel.im/notice?get=true`)
-                    .then(response => response.json())
-                    .then(response => {
+                await fetch(`https://pastel.im/notice?get=true`,
+                    {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    }
+                )
+                    .then((response: any) => response.json())
+                    .then((response: any) => {
                         const value = response.reverse().map((item: any) => {
                             return (
                                 <tr className={`xl:hover:cursor-pointer h-[4rem] xl:hover:bg-[#7c86df1e] transition-all text-[#666] font-sans font-bold`} onClick={() => { router.push(`/notice/${item.Num}/`) }}>
