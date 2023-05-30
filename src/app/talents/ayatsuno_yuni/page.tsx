@@ -5,7 +5,7 @@ export default function Home() {
         <div className="text-center flex m-auto justify-center mt-4 z-10">
             <div className='flex justify-center flex-wrap my-[2.25rem]'>
                 <div
-                    className="w-[400px] xl:w-[1600px] min-h-[1000px] h-auto relative  rounded-2xl bg-white mx-4 mt-5"
+                    className="w-[400px] xl:w-[1400px] 2xl:w-[1600px] min-h-[1000px] h-auto relative  rounded-2xl bg-white mx-4 mt-5"
                     style={{ boxShadow: "gray 0px 3px 6px 0px" }}
                 >
                     <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12 ">
