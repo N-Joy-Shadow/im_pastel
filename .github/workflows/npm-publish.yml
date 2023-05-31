@@ -26,5 +26,5 @@ jobs:
             sudo git reset --hard
             sudo git pull
             sudo npm install
-            sudo npm build
+            sudo npm run build
             sudo /usr/local/bin/pm2 reload Pastel --update-env
