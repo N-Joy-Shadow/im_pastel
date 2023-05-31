@@ -21,7 +21,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ~/devr/im_pastel
-            sudo /usr/local/bin/pm2 stop Pastel
             sudo git fetch --all
             sudo git reset --hard
             sudo git pull
