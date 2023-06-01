@@ -1,17 +1,20 @@
 "use client"
 import { useEffect, useState } from "react"
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import '../globals.css'
 
 export default function Home() {
+    const KEY = "view";
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
     const router = useRouter();
     const [articles, setArticles] = useState([<></>]);
     const tdStyle = "pl-6 xl:pl-20 xl:w-[140px]"
     useEffect(() => {
         async function initProducts() {
 
-            await fetch(`https://pastel.im/notice?get=true`,
+            await fetch(`https://pastel.im/notice/dbs/`,
                 {
                     method: 'GET',
                     headers: {
@@ -19,22 +22,31 @@ export default function Home() {
                     },
                 }
             )
-                .then((response: any) => response.json())
+                .then(async (response: any) => {
+                    console.clear();
+                    return response.json();
+                })
                 .then((response: any) => {
                     const value = response.reverse().map((item: any) => {
+                        console.log(item);
                         return (
-                            <tr className={`xl:hover:cursor-pointer h-[4rem] xl:hover:bg-[#7c86df1e] transition-all text-[#666] font-sans font-bold`} onClick={() => { router.push(`/notice/${item.Num}/`) }}>
+                            <tr className={`md:hover:cursor-pointer h-[4rem] md:hover:bg-[#7c86df1e] transition-all text-[#666] font-sans font-bold`}
+                                onClick={() => {
+                                    const params = new URLSearchParams(searchParams);
+                                    params.set("num", item.number);
+                                    router.push('/notice/article/?' + params.toString());
+                                }}>
 
 
-                                <td key={`${item.Num}${item.Title}1`} className={`${tdStyle}xl:ml-[2rem] xl:w-[2rem] text-sm xl:text-lg`}>
-                                    {item.Num}
+                                <td key={`${item.number}${item.title}1`} className={`${tdStyle}xl:ml-[2rem] xl:w-[2rem] text-sm xl:text-lg`}>
+                                    {item.number}
                                 </td>
-                                <td key={`${item.Num}${item.Title}2`} className="pl-[2rem] xl:pl-[8rem] text-left text-sm xl:text-[16px]">
-                                    {item.Title}
+                                <td key={`${item.number}${item.title}2`} className="pl-[2rem] xl:pl-[8rem] text-left text-sm xl:text-[16px]">
+                                    {item.title}
                                 </td>
 
-                                <td key={`${item.Num}${item.Title}3`} className="xl:ml-[2rem]  text-[10px] xl:text-sm">
-                                    {item.Date}
+                                <td key={`${item.number}${item.title}3`} className="xl:ml-[2rem]  text-[10px] xl:text-sm">
+                                    {item.article_date}
                                 </td>
                             </tr>
 
