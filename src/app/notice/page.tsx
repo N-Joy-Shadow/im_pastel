@@ -28,7 +28,7 @@ export default function Home() {
                 })
                 .then((response: any) => {
                     const value = response.reverse().map((item: any) => {
-                        console.log(item);
+                        // console.log(item);
                         return (
                             <tr className={`md:hover:cursor-pointer h-[4rem] md:hover:bg-[#7c86df1e] transition-all text-[#666] font-sans font-bold`}
                                 onClick={() => {
@@ -53,7 +53,7 @@ export default function Home() {
                         )
                     })
                     setArticles(value);
-                    console.log(value);
+                    // console.log(value);
                 })
                 .catch(err => console.error(err));
 

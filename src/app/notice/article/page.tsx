@@ -26,7 +26,7 @@ export default function Article() {
                     return response.json();
                 })
                 .then((response: any) => {
-                    console.log(response);
+                    // console.log(response);
                     const inner: string = response[0].inner;
                     const value = (
                         <div>
@@ -75,7 +75,7 @@ export default function Article() {
                         </div>
                     )
                     setArticles(value);
-                    console.log(value);
+                    // console.log(value);
                 })
                 .catch(err => console.error(err));
 
