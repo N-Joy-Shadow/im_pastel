@@ -1,6 +1,6 @@
 export default function Home() {
     const text_color = "text-[#7d7c7c]"
-    const a_style = `w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#7d7c7c] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:${text_color} xl:hover:text-white`
+    const a_style = `w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#7d7c7c] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#7d7c7c] xl:hover:text-white`
     const a_dummy = "w-[150px] h-[50px] px-[25px] py-[10px] text-center"
     return (
         <div className="text-center flex m-auto justify-center mt-4 z-10">
@@ -41,7 +41,8 @@ export default function Home() {
                             <div className={`text-center mx-4 xl:text-left mt-8 xl:ml-8 ${text_color} font-bold text-lg font-sunf xl:hover:cursor-default`}>
                                 몰라잉
                             </div>
-                            <div className="mx-10 xl:mx-0 xl:w-[500px] xl:min-h-[200px] flex flex-wrap justify-between mt-20 xl:ml-10 text-center">
+                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
+                                <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://twitch.tv/akanelize_stellive" target="blank">Twitch</a>
                                 <a className={`${a_style} text-[#1D9BF0] xl:hover:bg-[#1D9BF0]`} href="https://twitter.com/AkaneLize" target="blank">Twitter</a>
                                 <a className={`${a_style} text-[#03C75A] xl:hover:bg-[#03C75A]`} href="https://cafe.naver.com/tteokbokk1" target="blank">Naver Cafe</a>
                                 <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>

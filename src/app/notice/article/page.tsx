@@ -65,7 +65,7 @@ export default function Article() {
                                                 stroke-width="0.8"
                                             />
                                         </svg>
-                                        <div className="article-body block xl:flex-none inherit justify-center text-center mt-[70px] xl:mt-0 xl:top-[97px]">
+                                        <div className="article-body block xl:flex-none inherit justify-center font-normal text-center mt-[70px] xl:mt-0 xl:top-[97px]">
                                             {/* <div dangerouslySetInnerHTML={{ __html: inner }} className="xl:w-[1100px] mx-auto"></div> */}
                                             <ReactMarkdown rehypePlugins={[rehypeRaw]} className="xl:w-[1100px] mx-auto" children={inner} />
                                         </div>
