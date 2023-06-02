@@ -19,12 +19,23 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
             setVisual("hidden");
         }
     };
+
     ReactGA.initialize("G-5XQQLB2M6F");
     return (
         <html lang="kr" className="min-h-full h-auto">
             <head>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XQQLB2M6F"></script>
 
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XQQLB2M6F"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){
+                        // @ts-expect-error
+                        dataLayer.push(arguments)
+                    }
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-5XQQLB2M6F');
+                </script>
                 <meta
                     name="theme-color"
                     content="rgb(124, 134, 223)"
