@@ -4,19 +4,6 @@
 
 [`https://pastel.im/`](https://pastel.im/)
 
-## Installation
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/Ich-mag-dich/im_pastel.git
-   cd im_pastel
-   npm install
-   npm run dev
-   ```
-
-2. Open your browser and visit <http://localhost:3000> to view the I'm Pastel website.
-
 ## License
 
 The I'm Pastel website is licensed under the `MIT License`.
