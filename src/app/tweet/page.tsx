@@ -17,9 +17,21 @@ export default function Tweet() {
                     <a className="twitter-timeline mx-2" data-chrome="noscrollbar" data-lang="ko" data-width="380" data-height="700" href="https://twitter.com/airikannaKR">Tweets by airikannaKR</a>
                 </div>
                 <div className="my-2 xl:mx-2">
-                    <a className="twitter-timeline mx-2" data-chrome="noscrollbar" data-lang="ko" data-width="380" data-height="700" href="https://twitter.com/AiriKanna_">Tweets by AiriKanna_</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                    <a className="twitter-timeline mx-2" data-chrome="noscrollbar" data-lang="ko" data-width="380" data-height="700" href="https://twitter.com/AiriKanna_">Tweets by AiriKanna_</a>
                 </div>
 
+                <div className="my-2 xl:mx-2">
+                    <a className="twitter-timeline mx-2" data-chrome="noscrollbar" data-lang="ko" data-width="380" data-height="700" href="https://twitter.com/ArahashiTabi">Tweets by ArahashiTabi</a>
+                </div>
+                <div className="my-2 xl:mx-2">
+                    <a className="twitter-timeline mx-2" data-chrome="noscrollbar" data-lang="ko" data-width="380" data-height="700" href="https://twitter.com/AkaneLize">Tweets by AkaneLize</a>
+                </div>
+                <div className="my-2 xl:mx-2">
+                    <a className="twitter-timeline mx-2" data-chrome="noscrollbar" data-lang="ko" data-width="380" data-height="700" href="https://twitter.com/ShirayukiHina_">Tweets by ShirayukiHina_</a>
+                </div>
+                <div className="my-2 xl:mx-2">
+                    <a className="twitter-timeline mx-2" data-chrome="noscrollbar" data-lang="ko" data-width="380" data-height="700" href="https://twitter.com/NenekoMashiro">Tweets by NenekoMashiro</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                </div>
 
             </main>
         </div>
