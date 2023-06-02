@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from "next/link";
 import { Menu, Transition } from '@headlessui/react'
 import { useRouter } from 'next/navigation';
+import ReactGA from "react-ga4";
 
 export default function RootLayout({ children, }: { children: React.ReactNode; }) {
     const router = useRouter();
@@ -18,10 +19,12 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
             setVisual("hidden");
         }
     };
-
+    ReactGA.initialize("G-5XQQLB2M6F");
     return (
         <html lang="kr" className="min-h-full h-auto">
             <head>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XQQLB2M6F"></script>
+
                 <meta
                     name="theme-color"
                     content="rgb(124, 134, 223)"
@@ -230,7 +233,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                     </div>
                 </nav>
                 {children}
-                <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+                <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js" />
             </body>
         </html>
     )
