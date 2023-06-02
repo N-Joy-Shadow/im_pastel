@@ -34,7 +34,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                 />
                 <meta
                     name="description"
-                    content="버츄얼 아이돌 그룹 '스텔라이브'의 팬 사이트 입니다. 스텔라이브 관련 정보등을 제공합니다." />
+                    content="아임 파스텔은 버츄얼 아이돌 그룹 '스텔라이브'의 팬 사이트 입니다. 스텔라이브 관련 정보등을 제공합니다." />
                 <title>I'm Pastel</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
