@@ -159,6 +159,38 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                                     Ayatsuno Yuni
                                                 </Link>
                                             </li>
+                                            <hr />
+                                            <li className="">
+                                                <Link onClick={() => {
+                                                    chgVisl();
+                                                }} href="/live/tabi" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                    Arahashi Tabi
+                                                </Link>
+                                            </li>
+                                            <hr />
+                                            <li className="">
+                                                <Link onClick={() => {
+                                                    chgVisl();
+                                                }} href="/live/lize" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                    Akane Lize
+                                                </Link>
+                                            </li>
+                                            <hr />
+                                            <li className="">
+                                                <Link onClick={() => {
+                                                    chgVisl();
+                                                }} href="/live/hina" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                    Shirayuki Hina
+                                                </Link>
+                                            </li>
+                                            <hr />
+                                            <li className="">
+                                                <Link onClick={() => {
+                                                    chgVisl();
+                                                }} href="/live/mashiro" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                    Neneko Mashiro
+                                                </Link>
+                                            </li>
                                         </ul>
                                     </div>
                                 </li>
