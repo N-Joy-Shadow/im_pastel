@@ -21,6 +21,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
     };
 
     ReactGA.initialize("G-5XQQLB2M6F");
+    ReactGA.send({ hitType: "pageview", page: "/", title: "Custom Title" });
     return (
         <html lang="kr" className="min-h-full h-auto">
             <head>
