@@ -33,7 +33,7 @@ export default function Home() {
                         />
                     </svg>
                     <div className="flex flex-wrap xl:flex-none inherit justify-center mt-[70px] xl:mt-0 xl:top-[177px]">
-                        <img src="/static/stellive.svg" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded " width="240px" ></img>
+                        <img src="/static/stellive.svg" alt="lize" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded " width="240px" ></img>
 
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className={` text-[2.25rem] xl:text-7xl ${text_color} xl:hover:cursor-default`}>아카네 리제</div>

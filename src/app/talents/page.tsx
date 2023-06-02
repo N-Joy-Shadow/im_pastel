@@ -1,5 +1,6 @@
 "use client"
 import Link from 'next/link';
+
 import '../globals.css'
 import React, { useState } from 'react';
 
@@ -42,7 +43,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" className='w-auto rounded-2xl' src='/static/kanna.png'></img>
+                <img loading="lazy" alt='kanna' className='w-auto rounded-2xl' src='/static/kanna.png'></img>
               </div>
             </div>
           </Link>
@@ -78,7 +79,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" className='w-auto rounded-2xl' src='/static/yuni.png'></img>
+                <img loading="lazy" alt='yuni' className='w-auto rounded-2xl' src='/static/yuni.png'></img>
               </div>
             </div>
           </Link>
@@ -114,7 +115,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
+                <img loading="lazy" alt='tabi' className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
               </div>
             </div>
           </Link>
@@ -150,7 +151,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
+                <img loading="lazy" alt='lize' className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
               </div>
             </div>
           </Link>
@@ -186,7 +187,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
+                <img loading="lazy" alt='hina' className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
               </div>
             </div>
           </Link>
@@ -222,7 +223,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
+                <img loading="lazy" alt='mashiro' className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
               </div>
             </div>
           </Link>

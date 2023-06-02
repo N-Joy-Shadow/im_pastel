@@ -15,6 +15,7 @@ module.exports = {
       },
     },
     fontFamily: {
+      'emoji': ['Noto Color Emoji', 'sans-serif'],
       'mono': ['ui-monospace', 'SFMono-Regular', '"D2 coding", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New"'],
       'sunf': ['Sunflower', 'sans-serif'],
     }

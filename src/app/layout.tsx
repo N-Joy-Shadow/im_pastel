@@ -32,10 +32,13 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                     content="rgb(124, 134, 223)"
                     media="(prefers-color-scheme: dark)"
                 />
+                <meta
+                    name="description"
+                    content="버츄얼 아이돌 그룹 '스텔라이브'의 팬 사이트 입니다. 스텔라이브 관련 정보등을 제공합니다." />
                 <title>I'm Pastel</title>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Sunflower:wght@300&display=swap" rel="stylesheet" />
             </head>
             <body className=" font-bold h-full">
                 {/* <nav className="bg-[#eaddff] w-full border-white"> */}
