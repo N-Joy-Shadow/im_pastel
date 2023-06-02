@@ -29,7 +29,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                 <script>
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){
-                        // @ts-expect-error
+                        // @ts-ignore
                         dataLayer.push(arguments)
                     }
                     gtag('js', new Date());
