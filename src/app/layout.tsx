@@ -27,16 +27,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
             <head>
 
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XQQLB2M6F"></script>
-                <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){
-                        // @ts-ignore
-                        dataLayer.push(arguments)
-                    }
-                    gtag('js', new Date());
 
-                    gtag('config', 'G-5XQQLB2M6F');
-                </script>
                 <meta
                     name="theme-color"
                     content="rgb(124, 134, 223)"
