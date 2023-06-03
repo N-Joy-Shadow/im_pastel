@@ -115,7 +115,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" alt='tabi' className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
+                <img loading="lazy" alt='tabi' className='w-auto rounded-2xl' src='/static/tabi.jpg'></img>
               </div>
             </div>
           </Link>
@@ -151,7 +151,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" alt='lize' className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
+                <img loading="lazy" alt='lize' className='w-auto rounded-2xl' src='/static/lize.jpg'></img>
               </div>
             </div>
           </Link>
@@ -187,7 +187,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" alt='hina' className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
+                <img loading="lazy" alt='hina' className='w-auto rounded-2xl' src='/static/hina.jpg'></img>
               </div>
             </div>
           </Link>
@@ -223,7 +223,7 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" alt='mashiro' className='w-auto rounded-2xl' src='/static/stellive.svg'></img>
+                <img loading="lazy" alt='mashiro' className='w-auto rounded-2xl' src='/static/shiro.jpg'></img>
               </div>
             </div>
           </Link>
