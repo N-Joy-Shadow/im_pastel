@@ -54,7 +54,7 @@ export default function Home() {
                                 <a className={`${a_style} text-[#F26E23] xl:hover:bg-[#F26E23]`} href="https://soundcloud.com/airikanna" target="blank">SoundCloud</a>
                                 <a className={`${a_style} text-[#1D9BF0] xl:hover:bg-[#1D9BF0]`} href="https://twitter.com/AiriKannaKR" target="blank">Twitter KR</a>
                                 <a className={`${a_style} text-[#1D9BF0] xl:hover:bg-[#1D9BF0]`} href="https://twitter.com/airikanna_" target="blank">Twitter JP</a>
-                                <a className={`${a_style} text-[#03C75A] xl:hover:bg-[#03C75A]`} href="https://cafe.naver.com/tteokbokk1?iframe_url=/ArticleList.nhn%3Fsearch.clubid=29424353%26search.menuid=134%26search.boardtype=L" target="blank">Naver Cafe</a>
+                                <a className={`${a_style} text-[#03C75A] xl:hover:bg-[#03C75A]`} href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29424353&search.menuid=131&search.boardtype=L" target="blank">Naver Cafe</a>
                                 <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
                             </div>
                         </div>
