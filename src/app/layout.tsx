@@ -9,14 +9,35 @@ import ReactGA from "react-ga4";
 export default function RootLayout({ children, }: { children: React.ReactNode; }) {
     const router = useRouter();
     const [visl, setVisual] = useState<string>();
+    const [visl2, setVisual2] = useState<string>();
+    const [visl3, setVisual3] = useState<string>();
     if (visl === undefined) {
         setVisual("hidden");
+        setVisual2("hidden");
+        setVisual3("hidden");
+
     }
     const chgVisl = () => {
         if (visl === "hidden") {
             setVisual("block");
         } else {
             setVisual("hidden");
+        }
+    };
+
+    const chgVisl2 = () => {
+        if (visl2 === "hidden") {
+            setVisual2("block");
+        } else {
+            setVisual2("hidden");
+        }
+    };
+
+    const chgVisl3 = () => {
+        if (visl3 === "hidden") {
+            setVisual3("block");
+        } else {
+            setVisual3("hidden");
         }
     };
 
@@ -140,7 +161,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                             <li className="">
                                                 <Link onClick={() => {
                                                     chgVisl();
-                                                }} href="/live" className="px-6 block py-4 text-[#201e42] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                }} href="/live" className="px-6 block py-4 text-[#201e42] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
                                                     ALL
                                                 </Link>
                                             </li>
@@ -148,58 +169,88 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                             <li className="font-sunf">
                                                 <Link onClick={() => {
                                                     chgVisl();
-                                                }} href="/live/gangg" className="px-6 block py-4 text-[#8182B8] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
+                                                }} href="/live/gangg" className="px-6 block py-4 text-[#8182B8] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
                                                     사장님
                                                 </Link>
                                             </li>
                                             <hr />
-                                            <li className="">
-                                                <Link onClick={() => {
+                                            <div id="dropdown" className="group1 px-6 block py-4 text-[#201e42] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                <div onClick={() => {
                                                     chgVisl();
-                                                }} href="/live/kanna" className="px-6 block py-4 text-[#373584] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
-                                                    Airi Kanna
-                                                </Link>
-                                            </li>
-                                            <hr />
-                                            <li className="">
-                                                <Link onClick={() => {
+                                                }
+                                                }>
+
+                                                    <p className="">#1 Mystic</p>
+                                                    <ul className={`text-sm text-gray-700 dark:text-gray-200 hidden group1ch dropdown-menu absolute left-[225px] bg-white top-[138px] w-[250px] shadow px-6 py-8 rounded-md`}>
+                                                        <li className="">
+                                                            <Link onClick={() => {
+                                                                chgVisl();
+                                                            }} href="/live/kanna" className="px-6 block py-4 text-[#373584] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                                Airi Kanna
+                                                            </Link>
+                                                        </li>
+                                                        <hr />
+                                                        <li className="">
+                                                            <Link onClick={() => {
+                                                                chgVisl();
+                                                            }} href="/live/yuni" className="px-6 block py-4 text-[#B77DE4] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                                Ayatsuno Yuni
+                                                            </Link>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+
+                                            <div id="dropdown" className="group2 px-6 block py-4 text-[#201e42] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                <div onClick={() => {
                                                     chgVisl();
-                                                }} href="/live/yuni" className="px-6 block py-4 text-[#B77DE4] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
-                                                    Ayatsuno Yuni
-                                                </Link>
-                                            </li>
-                                            <hr />
-                                            <li className="">
-                                                <Link onClick={() => {
-                                                    chgVisl();
-                                                }} href="/live/tabi" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
-                                                    Arahashi Tabi
-                                                </Link>
-                                            </li>
-                                            <hr />
-                                            <li className="">
-                                                <Link onClick={() => {
-                                                    chgVisl();
-                                                }} href="/live/lize" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
-                                                    Akane Lize
-                                                </Link>
-                                            </li>
-                                            <hr />
-                                            <li className="">
-                                                <Link onClick={() => {
-                                                    chgVisl();
-                                                }} href="/live/hina" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
-                                                    Shirayuki Hina
-                                                </Link>
-                                            </li>
-                                            <hr />
-                                            <li className="">
-                                                <Link onClick={() => {
-                                                    chgVisl();
-                                                }} href="/live/mashiro" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#7c86df] cursor-pointer">
-                                                    Neneko Mashiro
-                                                </Link>
-                                            </li>
+                                                }
+                                                }>
+
+                                                    <p className=" ">#2 Universe</p>
+                                                    <ul className={` text-sm text-gray-700 dark:text-gray-200 hidden group2ch dropdown-menu absolute left-[225px] bg-white top-[138px] w-[250px]  shadow px-6 py-8 rounded-md`}>
+
+                                                        <li className="">
+                                                            <Link onClick={() => {
+                                                                chgVisl();
+                                                            }} href="/live/tabi" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                                Arahashi Tabi
+                                                            </Link>
+                                                        </li>
+                                                        <hr />
+                                                        <li className="">
+                                                            <Link onClick={() => {
+                                                                chgVisl();
+                                                            }} href="/live/lize" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                                Akane Lize
+                                                            </Link>
+                                                        </li>
+                                                        <hr />
+                                                        <li className="">
+                                                            <Link onClick={() => {
+                                                                chgVisl();
+                                                            }} href="/live/hina" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                                Shirayuki Hina
+                                                            </Link>
+                                                        </li>
+                                                        <hr />
+                                                        <li className="">
+                                                            <Link onClick={() => {
+                                                                chgVisl();
+                                                            }} href="/live/mashiro" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                                Neneko Mashiro
+                                                            </Link>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+
+
+
                                         </ul>
                                     </div>
                                 </li>
