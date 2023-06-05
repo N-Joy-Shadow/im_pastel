@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import '../globals.css'
+import ReactGA from "react-ga4";
 
 export default function Home() {
     const KEY = "view";
@@ -10,7 +11,9 @@ export default function Home() {
     const searchParams = useSearchParams();
     const router = useRouter();
     const [articles, setArticles] = useState([<></>]);
-    const tdStyle = "pl-6 xl:pl-20 xl:w-[140px]"
+    const tdStyle = "pl-6 xl:pl-20 min-w-[70px] xl:w-[120px]"
+    ReactGA.initialize("G-5XQQLB2M6F");
+    ReactGA.send({ hitType: "pageview", page: "/notice", title: "I'm pastel" });
     useEffect(() => {
         async function initProducts() {
 
@@ -93,9 +96,9 @@ export default function Home() {
                     <div className="inherit mt-[70px] xl:mt-0 xl:top-[77px]">
                         <table className="w-full xl:w-[1100px] mx-auto">
                             <tr className="text-[#666] font-sans font-bold">
-                                <th className={`${tdStyle} xl:pb-2`}>번호</th>
+                                <th className={`${tdStyle}  xl:pb-2`}>번호</th>
                                 <th className="xl:pb-2">제목</th>
-                                <th className="xl:w-[300px] xl:pb-2">작성일</th>
+                                <th className="xl:w-[300px] min-w-[100px] xl:pb-2">작성일</th>
                             </tr>
 
                             {articles}
