@@ -47,7 +47,7 @@ export default function Home() {
                                 이후 보호를 위해 유메퍼센트에 합류하게 된다.<br /> */}
                                 타락할지, 순수함을 전해갈 지는 유니의 선택에 맡겨졌다.<br />
                             </div>
-                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
+                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center mb-10">
                                 <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://www.twitch.tv/ayatsunoyuni_stellive" target="blank">Twitch</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@ayatsunoyuni" target="blank">Youtube</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@Yunireplay" target="blank">Replay</a>
