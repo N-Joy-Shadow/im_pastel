@@ -1,5 +1,5 @@
 export default function Home() {
-    const a_style = "w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#7C86DF] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#7C86DF] xl:hover:text-white"
+    const a_style = "my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#7C86DF] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#7C86DF] xl:hover:text-white"
     const a_dummy = "w-[150px] h-[50px] px-[25px] py-[10px] text-center"
     return (
         <div className="text-center flex m-auto justify-center mt-4 z-10">
