@@ -3,9 +3,12 @@ import Link from 'next/link';
 
 import '../globals.css'
 import React, { useState } from 'react';
+import ReactGA from "react-ga4";
 
 
 export default function Home() {
+  ReactGA.initialize("G-5XQQLB2M6F");
+  ReactGA.send({ hitType: "pageview", page: "/talents", title: "I'm pastel" });
   const divWidth = " my-[30px] w-[400px] h-[625px] sm:w-[400px] sm:h-[625px] md:w-[400px] md:h-[625px] lg:w-[400px] lg:h-[625px] xl:w-[400px] xl:h-[625px] 2xl:w-[400px] 2xl:h-[625px]"
   const imgWidth = "w-[308px] sm:w-[308px] md:w-[308px] lg:w-[308px] xl:w-[308px] 2xl:w-[308px]"
   return (

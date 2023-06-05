@@ -1,7 +1,10 @@
 
 import React from "react"
+import ReactGA from "react-ga4";
 
 export default function Test() {
+    ReactGA.initialize("G-5XQQLB2M6F");
+    ReactGA.send({ hitType: "pageview", page: "/live", title: "I'm pastel" });
     return (
         <div className="text-center flex m-auto justify-center mt-4">
             <div className='flex justify-center flex-wrap my-[2.25rem]'>

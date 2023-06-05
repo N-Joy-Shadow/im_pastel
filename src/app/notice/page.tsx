@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import '../globals.css'
+import ReactGA from "react-ga4";
 
 export default function Home() {
     const KEY = "view";
@@ -11,6 +12,8 @@ export default function Home() {
     const router = useRouter();
     const [articles, setArticles] = useState([<></>]);
     const tdStyle = "pl-6 xl:pl-20 min-w-[70px] xl:w-[120px]"
+    ReactGA.initialize("G-5XQQLB2M6F");
+    ReactGA.send({ hitType: "pageview", page: "/notice", title: "I'm pastel" });
     useEffect(() => {
         async function initProducts() {
 

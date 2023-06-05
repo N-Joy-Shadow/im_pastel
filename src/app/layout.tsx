@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, Transition } from '@headlessui/react'
 import { useRouter } from 'next/navigation';
 import ReactGA from "react-ga4";
+import Gtag from "./google";
 
 export default function RootLayout({ children, }: { children: React.ReactNode; }) {
     const router = useRouter();
@@ -20,14 +21,11 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
         }
     };
 
-    ReactGA.initialize("G-5XQQLB2M6F");
-    ReactGA.send({ hitType: "pageview", page: "/", title: "Custom Title" });
     return (
         <html lang="kr" className="min-h-full h-auto">
             <head>
 
-                <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XQQLB2M6F"></script>
-
+                {Gtag()}
                 <meta
                     name="theme-color"
                     content="rgb(124, 134, 223)"
