@@ -44,7 +44,7 @@ export default function Home() {
                             <div className={`${text_color} mt-4 xl:hover:cursor-default font-sunf`}>보물사냥꾼</div>
                             <div className={`${text_color} mt-4 xl:hover:cursor-default font-sunf`}>150cm | 16세 | 9월 7일</div>
 
-                            <div className={`"text-center mx-4 xl:text-left mt-8 xl:ml-8 ${text_color} font-bold text-lg font-sunf xl:hover:cursor-default"`}>
+                            <div className={`text-center mx-4 xl:text-left mt-8 xl:ml-8 ${text_color} font-bold text-lg font-sunf xl:hover:cursor-default`}>
                                 세상에서 제일 유명한 보물사냥꾼이 꿈인 타비, <br />
                                 여행 중 우연히 알게 된 하늘 도시의 보물을<br />
                                 훔쳐서 도망가는 도중에 길을 잃어버리게 되고<br />
