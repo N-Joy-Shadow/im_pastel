@@ -78,3 +78,11 @@ blockquote p::after {
 tr {
   border-bottom: 1px solid #ddd;
 }
+
+.group1:hover .group1ch {
+  display: block;
+}
+
+.group2:hover .group2ch {
+  display: block;
+}

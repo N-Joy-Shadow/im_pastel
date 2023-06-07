@@ -46,8 +46,9 @@ export default function Home() {
                             </div>
                             <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
                                 <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://twitch.tv/arahashitabi_stellive" target="blank">Twitch</a>
-                                <a className={`${a_style} text-[#1D9BF0] xl:hover:bg-[#1D9BF0]`} href="https://twitter.com/ArahashiTabi" target="blank">Twitter</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://youtube.com/@arahashitabi" target="blank">Youtube</a>
+                                <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@tabireplay" target="blank">Replay</a>
+                                <a className={`${a_style} text-[#1D9BF0] xl:hover:bg-[#1D9BF0]`} href="https://twitter.com/ArahashiTabi" target="blank">Twitter</a>
                                 <a className={`${a_style} text-[#03C75A] xl:hover:bg-[#03C75A]`} href="https://cafe.naver.com/tteokbokk1" target="blank">Naver Cafe</a>
                                 <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
                             </div>
