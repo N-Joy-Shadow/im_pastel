@@ -36,7 +36,7 @@ export default function Home() {
                             className=" w-[400px] lg:w-[600px] 2xl:w-[800px] xl:min-h-[381px] 2xl:min-h-[500px] pt-[50px] inline-block h-auto 2xl:my-auto relative rounded-2xl bg-white mx-4 mt-5"
                             style={{ boxShadow: "gray 0px 3px 6px 0px" }}
                         >
-                            <iframe loading="lazy" className="m-auto w-[300px] xl:w-[500px] xl:h-[281px] 2xl:w-[710px] 2xl:h-[400px] 2xl:px-0 " width="710" height="400" src="https://www.youtube.com/embed/M7CQ5HnFdsw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                            <iframe loading="lazy" className="m-auto w-[300px] xl:w-[500px] xl:h-[281px] 2xl:w-[710px] 2xl:h-[400px] 2xl:px-0 " width="710" height="400" src="https://www.youtube.com/embed/oetu6DR5ySw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 
                         </div>
                     </div>

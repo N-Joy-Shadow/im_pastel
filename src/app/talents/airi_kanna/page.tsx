@@ -40,9 +40,10 @@ export default function Home() {
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className=" text-[2.25rem] xl:text-7xl text-[#373584] xl:hover:cursor-default">아이리 칸나</div>
                             <div className="text-[#373584] mt-4 xl:hover:cursor-default">Airi Kanna</div>
-                            <div className="text-[#373584] mt-4 xl:hover:cursor-default font-sunf">12월 2일</div>
+                            <div className="text-[#373584] mt-4 xl:hover:cursor-default font-sunf">용궁의 황녀</div>
+                            <div className="text-[#373584] mt-4 xl:hover:cursor-default font-sunf">155cm | 1700세 | 12월 2일</div>
+
                             <div className="text-center mx-4 xl:text-left mt-8 xl:ml-14 text-[#373584] font-bold text-lg font-sunf xl:hover:cursor-default">
-                                용궁의 황녀<br />
 
                                 용궁의 부흥을 위해 지구를 찾아왔다.<br />
                                 용궁의 황녀로서 지식과 시야를 넓히기 위해 용궁 생활을 뒤로하고 지구에 오게되었다.<br />

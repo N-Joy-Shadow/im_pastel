@@ -40,9 +40,10 @@ export default function Home() {
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className=" text-[2.25rem] xl:text-7xl text-[#7C86DF] xl:hover:cursor-default">아야츠노 유니</div>
                             <div className="text-[#7C86DF] mt-4 xl:hover:cursor-default">Ayatsuno Yuni</div>
-                            <div className="text-[#7C86DF] mt-4 xl:hover:cursor-default font-sunf">5월 21일</div>
+                            <div className="text-[#7C86DF] mt-4 xl:hover:cursor-default font-sunf">타락을 꿈꾸는 순수의 상징, 유니콘</div>
+
+                            <div className="text-[#7C86DF] mt-4 xl:hover:cursor-default font-sunf">150cm | 4세 | 5월 21일</div>
                             <div className="text-center mx-4 xl:text-left mt-8 xl:ml-8 text-[#7C86DF] font-bold text-lg font-sunf xl:hover:cursor-default">
-                                타락을 꿈꾸는 순수의 상징, 유니콘<br />
 
                                 다른 유니콘들이 멸망을 향해갈 때, 혼자 잠들어 있었던 유니.<br />
                                 시간이 지나 홀로 눈을 뜬 유니.<br />

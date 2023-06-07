@@ -1,7 +1,7 @@
 import ReactGA from "react-ga4";
 export default function Home() {
-    const text_color = "text-[#7d7c7c]"
-    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#7d7c7c] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#7d7c7c] xl:hover:text-white`
+    const text_color = "text-[#936d5e]"
+    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#936d5e] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#936d5e] xl:hover:text-white`
     const a_dummy = "w-[150px] h-[50px] px-[25px] py-[10px] text-center"
     ReactGA.initialize("G-5XQQLB2M6F");
     ReactGA.send({ hitType: "pageview", page: "/talents", title: "hina" });
@@ -41,8 +41,14 @@ export default function Home() {
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className={` text-[2.25rem] xl:text-7xl ${text_color} xl:hover:cursor-default`}>시라유키 히나</div>
                             <div className={`${text_color} mt-4 xl:hover:cursor-default`}>Shirayuki Hina</div>
+                            <div className={`${text_color} mt-4 xl:hover:cursor-default font-sunf`}>수줍음이 많은 학생</div>
+                            <div className={`${text_color} mt-4 xl:hover:cursor-default font-sunf`}>156cm | 18세 | 1월 5일</div>
+
                             <div className={`text-center mx-4 xl:text-left mt-8 xl:ml-8 ${text_color} font-bold text-lg font-sunf xl:hover:cursor-default`}>
-                                몰라잉
+                                어렷을 적 히나의 꿈은 아이돌이었다.<br />
+                                유약한 성격 탓에 일찍이 꿈을 포기했지만,<br />
+                                친구의 제보로 본인의 노래 영상이 세상에 알려지게 되어<br />
+                                한 아이돌 프로덕션에 합류하게 된다.<br />
                             </div>
                             <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
                                 <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://twitch.tv/shirayukihina_stellive" target="blank">Twitch</a>

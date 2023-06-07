@@ -95,7 +95,7 @@ export default function Home() {
             >
               <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#7d7c7c]">
+                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#39a7d7]">
                   #2 Arahashi Tabi
                 </p>
               </div>
@@ -131,7 +131,7 @@ export default function Home() {
             >
               <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#7d7c7c]">
+                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#b73f3f]">
                   #2 Akane Lize
                 </p>
               </div>
@@ -167,7 +167,7 @@ export default function Home() {
             >
               <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#7d7c7c]">
+                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#936d5e]">
                   #2 Shirayuki Hina
                 </p>
               </div>
@@ -203,7 +203,7 @@ export default function Home() {
             >
               <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#7d7c7c]">
+                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#69605e]">
                   #2 Neneko Mashiro
                 </p>
               </div>

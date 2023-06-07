@@ -1,7 +1,7 @@
 import ReactGA from "react-ga4";
 export default function Home() {
-    const text_color = "text-[#7d7c7c]"
-    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#7d7c7c] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#7d7c7c] xl:hover:text-white`
+    const text_color = "text-[#b73f3f]"
+    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#b73f3f] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#b73f3f] xl:hover:text-white`
     const a_dummy = "w-[150px] h-[50px] px-[25px] py-[10px] text-center"
     ReactGA.initialize("G-5XQQLB2M6F");
     ReactGA.send({ hitType: "pageview", page: "/talents", title: "lize" });
@@ -41,8 +41,12 @@ export default function Home() {
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className={` text-[2.25rem] xl:text-7xl ${text_color} xl:hover:cursor-default`}>아카네 리제</div>
                             <div className={`${text_color} mt-4 xl:hover:cursor-default`}>Akane Lize</div>
+                            <div className={`${text_color} mt-4 xl:hover:cursor-default font-sunf`}>혼혈 뱀파이어</div>
+                            <div className={`${text_color} mt-4 xl:hover:cursor-default font-sunf`}>165cm | 700세 | 10월 1일</div>
                             <div className={`text-center mx-4 xl:text-left mt-8 xl:ml-8 ${text_color} font-bold text-lg font-sunf xl:hover:cursor-default`}>
-                                몰라잉
+                                아이돌을 동경해 흡혈 행위를 거의 하지 않는 혼혈 뱀파이어. <br />
+                                흡혈을 하지 않고 음악을 더 좋아하는 모습에<br />
+                                성에서 멸시받으며 쫓겨났다.<br />
                             </div>
                             <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
                                 <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://twitch.tv/akanelize_stellive" target="blank">Twitch</a>

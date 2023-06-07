@@ -1,7 +1,7 @@
 import ReactGA from "react-ga4";
 export default function Home() {
-    const text_color = "text-[#7d7c7c]"
-    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#7d7c7c] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#7d7c7c] xl:hover:text-white`
+    const text_color = "text-[#39a7d7]"
+    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#39a7d7] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#39a7d7] xl:hover:text-white`
     const a_dummy = "w-[150px] h-[50px] px-[25px] py-[10px] text-center"
     ReactGA.initialize("G-5XQQLB2M6F");
     ReactGA.send({ hitType: "pageview", page: "/talents", title: "tabi" });
@@ -41,8 +41,14 @@ export default function Home() {
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className={` text-[2.25rem] xl:text-7xl ${text_color} xl:hover:cursor-default`}>아라하시 타비</div>
                             <div className={`${text_color} mt-4 xl:hover:cursor-default`}>Arahashi Tabi</div>
+                            <div className={`${text_color} mt-4 xl:hover:cursor-default font-sunf`}>보물사냥꾼</div>
+                            <div className={`${text_color} mt-4 xl:hover:cursor-default font-sunf`}>150cm | 16세 | 9월 7일</div>
+
                             <div className={`"text-center mx-4 xl:text-left mt-8 xl:ml-8 ${text_color} font-bold text-lg font-sunf xl:hover:cursor-default"`}>
-                                몰라잉
+                                세상에서 제일 유명한 보물사냥꾼이 꿈인 타비, <br />
+                                여행 중 우연히 알게 된 하늘 도시의 보물을<br />
+                                훔쳐서 도망가는 도중에 길을 잃어버리게 되고<br />
+                                하늘 도시의 영역에서 떨어지게 된다.<br />
                             </div>
                             <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
                                 <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://twitch.tv/arahashitabi_stellive" target="blank">Twitch</a>
