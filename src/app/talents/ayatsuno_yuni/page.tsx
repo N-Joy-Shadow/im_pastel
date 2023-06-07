@@ -45,8 +45,8 @@ export default function Home() {
                             <div className="text-[#7C86DF] mt-4 xl:hover:cursor-default font-sunf">150cm | 4세 | 5월 21일</div>
                             <div className="text-center mx-4 xl:text-left mt-8 xl:ml-8 text-[#7C86DF] font-bold text-lg font-sunf xl:hover:cursor-default">
 
-                                다른 유니콘들이 멸망을 향해갈 때, 혼자 잠들어 있었던 유니.<br />
-                                시간이 지나 홀로 눈을 뜬 유니.<br />
+                                다른 유니콘들이 멸망을 향해갈 때, 혼자 잠들어 있었던 유니는 <br />
+                                시간이 지나 홀로 눈을 떴다.<br />
                                 {/* 는 “순수 100%”로서 유메퍼센트에 관측된다.<br />
                                 이후 보호를 위해 유메퍼센트에 합류하게 된다.<br /> */}
                                 타락할지, 순수함을 전해갈 지는 유니의 선택에 맡겨졌다.<br />

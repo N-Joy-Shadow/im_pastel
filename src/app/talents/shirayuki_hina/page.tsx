@@ -45,7 +45,7 @@ export default function Home() {
                             <div className={`${text_color} mt-4 xl:hover:cursor-default font-sunf`}>156cm | 18세 | 1월 5일</div>
 
                             <div className={`text-center mx-4 xl:text-left mt-8 xl:ml-8 ${text_color} font-bold text-lg font-sunf xl:hover:cursor-default`}>
-                                어렷을 적 히나의 꿈은 아이돌이었다.<br />
+                                어렸을 적 히나의 꿈은 아이돌이었다.<br />
                                 유약한 성격 탓에 일찍이 꿈을 포기했지만,<br />
                                 친구의 제보로 본인의 노래 영상이 세상에 알려지게 되어<br />
                                 한 아이돌 프로덕션에 합류하게 된다.<br />
