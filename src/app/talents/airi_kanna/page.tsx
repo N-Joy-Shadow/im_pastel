@@ -1,6 +1,9 @@
+import ReactGA from "react-ga4";
 export default function Home() {
     const a_style = "w-[150px] my-2 h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#373584] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#373584] xl:hover:text-white"
     const a_dummy = "w-[150px] h-[50px] px-[25px] py-[10px] text-center"
+    ReactGA.initialize("G-5XQQLB2M6F");
+    ReactGA.send({ hitType: "pageview", page: "/talents", title: "kanna" });
     return (
         <div className="text-center flex m-auto justify-center mt-4 z-10">
             <div className='flex justify-center flex-wrap my-[2.25rem]'>

@@ -13,7 +13,7 @@ export default function Home() {
     const [articles, setArticles] = useState([<></>]);
     const tdStyle = "pl-6 xl:pl-20 min-w-[70px] xl:w-[120px]"
     ReactGA.initialize("G-5XQQLB2M6F");
-    ReactGA.send({ hitType: "pageview", page: "/notice", title: "I'm pastel" });
+    ReactGA.send({ hitType: "pageview", page: "/notice", title: "notice" });
     useEffect(() => {
         async function initProducts() {
 

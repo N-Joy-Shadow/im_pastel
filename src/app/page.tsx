@@ -6,7 +6,7 @@ export default function Home() {
     const contentClassName = "font-bold font-emoji xl:text-4xl 2xl:text-6xl";
     const contentClassName2 = "font-bold font-emoji text-2xl";
     ReactGA.initialize("G-5XQQLB2M6F");
-    ReactGA.send({ hitType: "pageview", page: "/", title: "I'm pastel" });
+    ReactGA.send({ hitType: "pageview", page: "/", title: "I'm Pastel / root" });
     return (
         <main className="h-full xl:hover:cursor-default">
             <img src="/static/stellive.svg" alt="logo" className="mt-[-60px]  xl:ml-20 xl:mt-[-110px] w-[300px] xl:w-[500px] h-auto absolute z-[-1]"></img>

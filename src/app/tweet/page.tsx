@@ -3,7 +3,7 @@ import ReactGA from "react-ga4";
 
 export default function Tweet() {
     ReactGA.initialize("G-5XQQLB2M6F");
-    ReactGA.send({ hitType: "pageview", page: "/tweet", title: "I'm pastel" });
+    ReactGA.send({ hitType: "pageview", page: "/tweet", title: "tweet" });
     return (
         <div className="flex flex-col items-center justify-center min-h-screen max-w-[100vw] py-2">
             <div className="font-mono text-3xl text-white font-bold drop-shadow-xl mt-10 mb-10 xl:mb-0 "> TWEETS </div>
