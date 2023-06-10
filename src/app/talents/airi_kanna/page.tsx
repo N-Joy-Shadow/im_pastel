@@ -35,7 +35,7 @@ export default function Home() {
                         />
                     </svg>
                     <div className="flex flex-wrap xl:flex-none inherit justify-center mt-[70px] xl:mt-0 xl:top-[177px]">
-                        <img src="/static/kanna_body.png" alt="kanna" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded " width="240px" ></img>
+                        <img src="/static/kanna.png" alt="kanna" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded-lg " width="240px" ></img>
 
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className=" text-[2.25rem] xl:text-7xl text-[#373584] xl:hover:cursor-default">아이리 칸나</div>
@@ -50,7 +50,7 @@ export default function Home() {
                                 {/* 이는 바로 유메퍼센트에 “명예 100%”로 관측이 되었고, 합류하게 된다.<br /> */}
                                 시청자들의 앞에 선 그녀에게선 지도자로서의 카리스마를 볼 수 있을 것이다.<br />
                             </div>
-                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[250px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
+                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[250px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center mb-10">
                                 <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://www.twitch.tv/airikanna_stellive" target="blank">Twitch</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@airikannach" target="blank">Youtube</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@airikanna" target="blank">Music</a>

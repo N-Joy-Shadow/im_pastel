@@ -1,7 +1,7 @@
 import ReactGA from "react-ga4";
 export default function Home() {
-    const text_color = "text-[#b73f3f]"
-    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#b73f3f] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#b73f3f] xl:hover:text-white`
+    const text_color = "text-[#f46874]"
+    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#f46874] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#f46874] xl:hover:text-white`
     const a_dummy = "w-[150px] h-[50px] px-[25px] py-[10px] text-center"
     ReactGA.initialize("G-5XQQLB2M6F");
     ReactGA.send({ hitType: "pageview", page: "/talents", title: "lize" });
@@ -36,7 +36,7 @@ export default function Home() {
                         />
                     </svg>
                     <div className="flex flex-wrap xl:flex-none inherit justify-center mt-[70px] xl:mt-0 xl:top-[177px]">
-                        <img src="/static/444-crop.jpg" alt="lize" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded " width="240px" ></img>
+                        <img src="/static/lizemama.jpg" alt="lize" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded-lg " width="240px" ></img>
 
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className={` text-[2.25rem] xl:text-7xl ${text_color} xl:hover:cursor-default`}>아카네 리제</div>

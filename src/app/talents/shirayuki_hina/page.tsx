@@ -1,7 +1,7 @@
 import ReactGA from "react-ga4";
 export default function Home() {
-    const text_color = "text-[#936d5e]"
-    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#936d5e] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#936d5e] xl:hover:text-white`
+    const text_color = "text-[#fca572]"
+    const a_style = `my-2 w-[150px] h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#fca572] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#fca572] xl:hover:text-white`
     const a_dummy = "w-[150px] h-[50px] px-[25px] py-[10px] text-center"
     ReactGA.initialize("G-5XQQLB2M6F");
     ReactGA.send({ hitType: "pageview", page: "/talents", title: "hina" });
@@ -36,7 +36,7 @@ export default function Home() {
                         />
                     </svg>
                     <div className="flex flex-wrap xl:flex-none inherit justify-center mt-[70px] xl:mt-0 xl:top-[177px]">
-                        <img src="/static/333-crop.jpg" alt="hina" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded " width="240px" ></img>
+                        <img src="/static/hinamama.jpg" alt="hina" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded-lg " width="240px" ></img>
 
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className={` text-[2.25rem] xl:text-7xl ${text_color} xl:hover:cursor-default`}>시라유키 히나</div>
@@ -50,7 +50,7 @@ export default function Home() {
                                 친구의 제보로 본인의 노래 영상이 세상에 알려지게 되어<br />
                                 한 아이돌 프로덕션에 합류하게 된다.<br />
                             </div>
-                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
+                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center mb-10">
                                 <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://twitch.tv/shirayukihina_stellive" target="blank">Twitch</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://youtube.com/@shirayukihina" target="blank">Youtube</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@hinareplay" target="blank">Replay</a>

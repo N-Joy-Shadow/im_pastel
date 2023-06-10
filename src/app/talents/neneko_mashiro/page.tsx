@@ -36,7 +36,7 @@ export default function Home() {
                         />
                     </svg>
                     <div className="flex flex-wrap xl:flex-none inherit justify-center mt-[70px] xl:mt-0 xl:top-[177px]">
-                        <img src="/static/222-crop.jpg" alt="mashiro" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded " width="240px" ></img>
+                        <img src="/static/shiromama.jpg" alt="mashiro" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded-lg " width="240px" ></img>
 
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className={` text-[2.25rem] xl:text-7xl ${text_color} xl:hover:cursor-default`}>네네코 마시로</div>
@@ -49,7 +49,7 @@ export default function Home() {
                                 유일한 수단인 탐지기를 잃어버려 헤매다<br />
                                 스텔라이브를 발견하게 된다.<br />
                             </div>
-                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
+                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center mb-10">
                                 <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://twitch.tv/nenekomashiro_stellive" target="blank">Twitch</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://youtube.com/@neneko_mashiro" target="blank">Youtube</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@mashiroreplay" target="blank">Replay</a>

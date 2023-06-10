@@ -36,7 +36,7 @@ export default function Home() {
                         />
                     </svg>
                     <div className="flex flex-wrap xl:flex-none inherit justify-center mt-[70px] xl:mt-0 xl:top-[177px]">
-                        <img src="/static/111-crop.jpg" alt="tabi" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded " width="240px" ></img>
+                        <img src="/static/tabi_temp.png" alt="tabi, !!! ai picture !!!" className=" w-[230px] h-[355px] xl:w-[440px] xl:h-[679px] rounded-lg " width="240px" ></img>
 
                         <div className=" xl:block  mt-16 xl:ml-20">
                             <div className={` text-[2.25rem] xl:text-7xl ${text_color} xl:hover:cursor-default`}>아라하시 타비</div>
@@ -50,7 +50,7 @@ export default function Home() {
                                 훔쳐서 도망가는 도중에 길을 잃어버리게 되고<br />
                                 하늘 도시의 영역에서 떨어지게 된다.<br />
                             </div>
-                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center">
+                            <div className="mx-10 xl:mx-0 xl:w-[500px] min-h-[150px] flex flex-wrap justify-between mt-20 xl:ml-16 text-center mb-10">
                                 <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://twitch.tv/arahashitabi_stellive" target="blank">Twitch</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://youtube.com/@arahashitabi" target="blank">Youtube</a>
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@tabireplay" target="blank">Replay</a>

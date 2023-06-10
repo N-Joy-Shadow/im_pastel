@@ -46,8 +46,10 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" alt='kanna' className='w-auto rounded-2xl' src='/static/kanna.png'></img>
+                <img loading="lazy" alt='kanna' className='w-auto rounded-2xl' src='/static/kanna3.jpg'></img>
               </div>
+
+              <p className="relative top-[80px] right-[40px] text-gray-300 ">https://twitter.com/atwomaru</p>
             </div>
           </Link>
           <Link href="/talents/ayatsuno_yuni">
@@ -82,8 +84,11 @@ export default function Home() {
               </svg>
 
               <div className="flex inherit justify-center items-center text-center mx-auto w-[310px] top-[77px]">
-                <img loading="lazy" alt='yuni' className='w-auto rounded-2xl' src='/static/yuni.png'></img>
+                <img loading="lazy" alt='yuni' className='w-auto rounded-2xl' src='/static/yuni3.jpg'></img>
+
               </div>
+              <p className="relative top-[80px] right-[40px] text-gray-300 ">https://twitter.com/atwomaru</p>
+
             </div>
           </Link>
           <Link href="/talents/arahashi_tabi">
@@ -167,7 +172,7 @@ export default function Home() {
             >
               <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#936d5e]">
+                <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#fca572]">
                   #2 Shirayuki Hina
                 </p>
               </div>
