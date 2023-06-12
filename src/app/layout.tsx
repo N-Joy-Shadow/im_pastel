@@ -10,12 +10,8 @@ import Gtag from "./google";
 export default function RootLayout({ children, }: { children: React.ReactNode; }) {
     const router = useRouter();
     const [visl, setVisual] = useState<string>();
-    const [visl2, setVisual2] = useState<string>();
-    const [visl3, setVisual3] = useState<string>();
     if (visl === undefined) {
         setVisual("hidden");
-        setVisual2("hidden");
-        setVisual3("hidden");
 
     }
     const chgVisl = () => {
