@@ -130,12 +130,12 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                     </Link>
                                 </li>
                                 <p className="hidden xl:p-[0.7rem] md:block cursor-default xxxx">|</p>
-                                <li className="z-10 group relative dropdown xl:p-[0.7rem] xl:hover:bg-slate-400 transition-all xl:hover:drop-shadow-none rounded drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] xxx">
+                                <li className="z-50 group relative dropdown xl:p-[0.7rem] xl:hover:bg-slate-400 transition-all xl:hover:drop-shadow-none rounded drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] xxx">
 
                                     <p onClick={() => { router.push(`/live`) }} className="block py-2 pl-3 pr-4 transition rounded font-bold md:border-0  md:p-0 xl:hover:cursor-pointer xl:hover:drop-shadow-none ">LIVE</p>
 
                                     <div className="group-hover:opacity-100 group-hover:block transition duration-200 dropdown-menu absolute opacity-0 hidden h-auto z-40  w-[250px] xl:left-[-30px] xl:top-[45px] drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-                                        <ul className="top-0 bg-white shadow px-6 py-8 rounded-md text-left z-40">
+                                        <ul className="top-0 bg-white shadow px-6 py-8 rounded-md text-left z-50">
                                             <li className="">
                                                 <Link onClick={() => {
                                                     chgVisl();
