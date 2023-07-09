@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link';
-import React, { useRef, useState } from "react"
+import React, { use, useEffect, useRef, useState } from "react"
 import ReactGA from "react-ga4";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,7 +10,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Autoplay, Pagination, Navigation } from "swiper";
+import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
+SwiperCore.use([Pagination, Autoplay]);
+
+
 import "./about/style.css";
 export default function Home() {
 
@@ -20,6 +23,13 @@ export default function Home() {
     const contentClassName2 = "font-bold font-emoji text-xl";
     ReactGA.initialize("G-5XQQLB2M6F");
     ReactGA.send({ hitType: "pageview", page: "/", title: "I'm Pastel / root" });
+    const [SwiperVisible, setSwiperVisible] = useState("hidden11");
+    useEffect(() => {
+        if (SwiperVisible === "hidden11") {
+            setSwiperVisible("visible")
+        }
+    }, [SwiperSlide])
+
     return (
         <main className="h-full xl:hover:cursor-default">
             <img src="/static/stellive.svg" alt="logo" className="  xl:ml-20 xl:mt-[-110px] w-[300px] xl:w-[500px] h-auto absolute z-[-1]"></img>
@@ -48,7 +58,7 @@ export default function Home() {
             </div> */}</div>
             </div>
             <div className="slsl h-auto w-auto xl:absolute xl:bottom-0  xl:right-20 mt-[50px] z-30">
-                <div className='mx-auto w-auto'>
+                <div className={`mx-auto w-auto ${SwiperVisible}`}>
                     <div className="text-center mx-auto my-[2.25rem] justify-center items-center flex flex-wrap w-auto">
                         <Swiper
                             slidesPerView={1}
@@ -60,11 +70,12 @@ export default function Home() {
                                 disableOnInteraction: false,
                                 pauseOnMouseEnter: true,
                             }}
+
                             pagination={{
                                 clickable: true,
                             }}
                             modules={[Autoplay, Pagination]}
-                            className="mySwiper w-[500px]"
+                            className={`mySwiper w-[500px]`}
                         >
                             <SwiperSlide>
 
