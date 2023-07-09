@@ -115,7 +115,7 @@ export default function Test() {
                 >
                     <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552]">
+                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#39a7d7]">
                             Arahashi Tabi
                         </p>
                     </div>
@@ -149,7 +149,7 @@ export default function Test() {
                 >
                     <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552]">
+                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#b73f3f]">
                             Akane Lize
                         </p>
                     </div>
@@ -183,7 +183,7 @@ export default function Test() {
                 >
                     <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552]">
+                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#fca572]">
                             Shirayuki Hina
                         </p>
                     </div>
@@ -217,7 +217,7 @@ export default function Test() {
                 >
                     <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12">
 
-                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#0f2552]">
+                        <p className="hover:cursor-pointer flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#69605e]">
                             Neneko Mashiro
                         </p>
                     </div>

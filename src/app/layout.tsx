@@ -23,7 +23,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
     };
 
     return (
-        <html lang="kr" className="min-h-full h-auto">
+        <html lang="ko" className="min-h-full h-auto">
             <head>
 
                 {Gtag()}
@@ -192,7 +192,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                                         <li className="">
                                                             <Link onClick={() => {
                                                                 chgVisl();
-                                                            }} href="/live/tabi" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                            }} href="/live/tabi" className="px-6 block py-4 text-[#39a7d7] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
                                                                 Arahashi Tabi
                                                             </Link>
                                                         </li>
@@ -200,7 +200,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                                         <li className="">
                                                             <Link onClick={() => {
                                                                 chgVisl();
-                                                            }} href="/live/lize" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                            }} href="/live/lize" className="px-6 block py-4 text-[#b73f3f] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
                                                                 Akane Lize
                                                             </Link>
                                                         </li>
@@ -208,7 +208,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                                         <li className="">
                                                             <Link onClick={() => {
                                                                 chgVisl();
-                                                            }} href="/live/hina" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                            }} href="/live/hina" className="px-6 block py-4 text-[#fca572] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
                                                                 Shirayuki Hina
                                                             </Link>
                                                         </li>
@@ -216,7 +216,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
                                                         <li className="">
                                                             <Link onClick={() => {
                                                                 chgVisl();
-                                                            }} href="/live/mashiro" className="px-6 block py-4 text-[#7d7c7c] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
+                                                            }} href="/live/mashiro" className="px-6 block py-4 text-[#69605e] font-bold text-base transition-all xl:hover:text-white xl:hover:bg-[#aab2ff] cursor-pointer">
                                                                 Neneko Mashiro
                                                             </Link>
                                                         </li>
