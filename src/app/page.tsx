@@ -17,7 +17,7 @@ export default function Home() {
     const divWidth = " my-[30px] w-[400px] h-[625px] sm:w-[400px] sm:h-[625px] md:w-[400px] md:h-[625px] lg:w-[400px] lg:h-[625px] xl:w-[400px] xl:h-[625px] 2xl:w-[400px] 2xl:h-[625px] mb-[60px]"
     const content = " I'm Pastel은 버츄얼 아이돌 그룹 '스텔라이브'의 팬 사이트 입니다. ";
     const contentClassName = "font-bold font-emoji xl:text-4xl 2xl:text-6xl";
-    const contentClassName2 = "font-bold font-emoji text-2xl";
+    const contentClassName2 = "font-bold font-emoji text-xl";
     ReactGA.initialize("G-5XQQLB2M6F");
     ReactGA.send({ hitType: "pageview", page: "/", title: "I'm Pastel / root" });
     return (
@@ -28,7 +28,7 @@ export default function Home() {
                     <figure className="xl:w-[1000px] pl-[1.5rem]  xl:pl-[2.25rem]">
                         <p className={`${contentClassName} qq`} >⭐I'm Pastel</p>
                         <blockquote cite="https://pastel.im/">
-                            <p className={`${contentClassName2} w-[500px] xl:w-[520px] 2.5xl:w-[920px] qw font-sunf`}>{content}</p>
+                            <p className={`${contentClassName2} min-w-[300px] xl:w-[520px] 2.5xl:w-[920px] qw font-sunf`}>{content}</p>
                         </blockquote>
                     </figure>
 
@@ -47,7 +47,7 @@ export default function Home() {
                 </div>
             </div> */}</div>
             </div>
-            <div className="slsl h-auto w-auto lg:absolute lg:bottom-0  lg:right-20 mt-[10px] z-30">
+            <div className="slsl h-auto w-auto xl:absolute xl:bottom-0  xl:right-20 mt-[50px] z-30">
                 <div className='mx-auto w-auto'>
                     <div className="text-center mx-auto my-[2.25rem] justify-center items-center flex flex-wrap w-auto">
                         <Swiper
