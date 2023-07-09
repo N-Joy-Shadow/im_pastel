@@ -56,7 +56,7 @@ export default function Home() {
                                 <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@hinareplay" target="blank">Replay</a>
                                 <a className={`${a_style} text-[#1D9BF0] xl:hover:bg-[#1D9BF0]`} href="https://twitter.com/ShirayukiHina_" target="blank">Twitter</a>
                                 <a className={`${a_style} text-[#F26E23] xl:hover:bg-[#F26E23]`} href="https://soundcloud.com/shirayukihina" target="blank">SoundCloud</a>
-                                <a className={`${a_style} text-[#03C75A] xl:hover:bg-[#03C75A]`} href="https://cafe.naver.com/tteokbokk1" target="blank">Naver Cafe</a>
+                                <a className={`${a_style} text-[#03C75A] xl:hover:bg-[#03C75A]`} href="https://cafe.naver.com/ArticleList.nhn?search.clubid=29424353&search.menuid=149&search.boardtype=L" target="blank">Naver Cafe</a>
                                 <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
                             </div>
                         </div>
