@@ -17,6 +17,12 @@ export default function About() {
     const divWidth = " my-[30px] w-[400px] h-[625px] sm:w-[400px] sm:h-[625px] md:w-[400px] md:h-[625px] lg:w-[400px] lg:h-[625px] xl:w-[400px] xl:h-[625px] 2xl:w-[400px] 2xl:h-[625px] mb-[60px]"
     return (
         <div className="h-auto w-auto">
+      <div>
+
+        <p>
+        테스트 페이지 입니다.
+        </p>
+      </div>
             <div className='mx-auto w-auto'>
                 <div className="text-center mx-auto my-[2.25rem] justify-center items-center flex flex-wrap w-auto">
                     <Swiper
