@@ -1,14 +1,10 @@
 import React from "react"
-import ButtonBase from "./ButtonBase";
+import ButtonBase, { IButtonProps } from "./ButtonBase";
 
-interface ITwitchButtonProps {
-    href : string;
 
-}
-
-const TwitchButton = (props : ITwitchButtonProps) => {
+const TwitchButton = (props : IButtonProps) => {
   return (
-    <ButtonBase href={`https://www.twitch.tv/${props.href}`} name="Twitch" style="text-[#A970FF] xl:hover:bg-[#A970FF]"/>
+    <ButtonBase href={`https://www.twitch.tv/${props.href}`} name="Twitch" secondary_color="#A970FF" primary_color={props.primary_color}/>
 )}
 
 export default TwitchButton

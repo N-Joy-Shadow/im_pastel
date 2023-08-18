@@ -1,13 +1,10 @@
 import React from "react"
-import ButtonBase from "./ButtonBase"
+import ButtonBase, { IButtonProps } from "./ButtonBase"
 
-interface IYoutubeButtonProps {
-    href : string
-}
 
-const YoutubeButton = (props : IYoutubeButtonProps) => {
+const YoutubeButton = (props : IButtonProps) => {
   return (
-    <ButtonBase style="text-[#FF0000] xl:hover:bg-[#FF0000]" href={`https://www.youtube.com/${props.href}`} name="Youtube" />
+    <ButtonBase href={`https://www.youtube.com/${props.href}`} name="Youtube" primary_color={props.primary_color} secondary_color="#FF0000" />
 )}
 
 export default YoutubeButton

@@ -11,8 +11,15 @@ import "swiper/css/navigation";
 import "./style.css";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
+import NaverButton from '@/components/button/NaverButton';
+import TwitchButton from '@/components/button/TwitchButton';
+import YoutubeButton from '@/components/button/YoutubeButton';
+import TwitterButton from '@/components/button/TwitterButton';
+import ButtonBase from '@/components/button/ButtonBase';
+import Line from '@/components/Line';
 
 export default function About() {
+    const aa = "#9ab6f0"
     const a_style = "w-[150px] xl:mx-2 my-2 h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl border-[#516794] xl:hover:border-white duration-300 border-2 xl:hover:text-white xl:hover:cursor-pointer xl:text-[#516794] xl:hover:text-white"
     const a_dummy = "w-[150px] xl:mx-2 h-[50px] px-[25px] py-[10px] text-center"
     const divWidth = " my-[30px] w-[400px] h-[625px] sm:w-[400px] sm:h-[625px] md:w-[400px] md:h-[625px] lg:w-[400px] lg:h-[625px] xl:w-[400px] xl:h-[625px] 2xl:w-[400px] 2xl:h-[625px] mb-[60px]"
@@ -24,43 +31,20 @@ export default function About() {
                         className=" w-[400px] lg:w-[600px] xl:w-[1200px] min-h-[500px] h-auto relative pb-[92px] rounded-2xl bg-white mx-4 mt-5"
                         style={{ boxShadow: "gray 0px 3px 6px 0px" }}
                     >
-                        <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12 ">
+                        {/* <div className="flex justify-between items-center w-[308px] absolute left-0 top-6 px-12 ">
 
                             <p className="xl:hover:cursor-default flex-grow-0 flex-shrink-0 text-sm font-semibold text-center text-[#7C86DF] ">
                                 About
                             </p>
-                        </div>
-                        <svg
-                            width={251}
-                            height={1}
-                            viewBox="0 0 251 1"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="absolute left-0 top-[60.1px] px-12"
-                            preserveAspectRatio="xMidYMid meet"
-                        >
-                            <line
-                                y1="0.6"
-                                x2={251}
-                                y2="0.6"
-                                stroke="#E4E5E7"
-                                stroke-width="0.8"
-                            />
-                        </svg>
-                        <div className="mx-10 min-h-[250px] flex flex-wrap justify-between mt-20 xl:mx-16 text-center mb-10">
-                            <a className={`${a_style} text-[#03C75A] xl:hover:bg-[#03C75A]`} href="https://cafe.naver.com/tteokbokk1" target="blank">Naver Cafe</a>
-                            <a className={`${a_style} text-[#A970FF] xl:hover:bg-[#A970FF] `} href="https://www.twitch.tv/stellive_official" target="blank">Twitch</a>
-                            <a className={`${a_style} text-[#FF0000] xl:hover:bg-[#FF0000]`} href="https://www.youtube.com/@stellive_official" target="blank">Youtube</a>
-                            <a className={`${a_style} text-[#1D9BF0] xl:hover:bg-[#1D9BF0]`} href="https://twitter.com/StelLive_kr" target="blank">Twitter</a>
-                            <a className={`${a_style} text-[#9ab6f0] xl:hover:bg-[#9ab6f0]`} href="https://stellight.fans/#/schedules" target="blank">StelLight</a>
-                            <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
-                            <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
-                            <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
-                            <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
-                            <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
-                            <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
-                            <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
-                            <a className={`${a_dummy} border-white hover:cursor-default`} href="#" target="blank"></a>
+                        </div> */}
+                        <Line/>
+                        <div className="mx-12 min-h-[250px] justify-between xl:justify-start mt-20 xl:mx-16 text-center mb-10 flex flex-wrap">
+                            <NaverButton href='tteokbokk1' primary_color='#516794'/>
+                            <TwitchButton href='stellive_official' primary_color='#516794'/>
+                            <YoutubeButton href='@stellive_official' primary_color='#516794'/>
+                            <TwitterButton href='StelLive_kr' primary_color='#516794'/>
+                            <ButtonBase secondary_color='#9ab6f0' href='https://stellight.fans/#/schedule' primary_color="#516794" name='StelLight'  /> {/*<- 아니 색깔 다르면 출력되고 이게 말인가 */}
+
                         </div>
                         <div className='text-center'>
                             <a href='https://github.com/Ich-mag-dich/im_pastel' target='blank'>

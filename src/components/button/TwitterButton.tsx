@@ -1,13 +1,11 @@
 import React from "react"
-import ButtonBase from "./ButtonBase"
+import ButtonBase, { IButtonProps } from "./ButtonBase"
 
-interface ITwitterButtonProps {
-    href : string
-}
 
-const TwitterButton = (props : ITwitterButtonProps) => {
+
+const TwitterButton = (props : IButtonProps) => {
   return (
-    <ButtonBase href={`https://twitter.com/${props.href}`} style="text-[#1D9BF0] xl:hover:bg-[#1D9BF0]" name="Twitter"/>
+    <ButtonBase href={`https://twitter.com/${props.href}`} name="Twitter" primary_color={props.primary_color} secondary_color="#1D9BF0"/>
 )}
 
 export default TwitterButton
