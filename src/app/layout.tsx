@@ -27,6 +27,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
             <head>
 
                 {Gtag()}
+                <meta name="naver-site-verification" content="fb9531686520ea4e6c403b1e4dfffafe1061498f" />
                 <meta
                     name="theme-color"
                     content="rgb(124, 134, 223)"
