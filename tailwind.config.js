@@ -13,6 +13,9 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors : {
+        "stellight" : "#9ab6f0"
+      }
     },
     fontFamily: {
       'emoji': ['Noto Color Emoji', 'sans-serif'],
