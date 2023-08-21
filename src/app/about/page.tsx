@@ -39,11 +39,11 @@ export default function About() {
                         </div> */}
                         <Line/>
                         <div className="mx-12 min-h-[250px] justify-between xl:justify-start mt-20 xl:mx-16 text-center mb-10 flex flex-wrap">
-                            <NaverButton href='tteokbokk1' primary_color='#516794'/>
-                            <TwitchButton href='stellive_official' primary_color='#516794'/>
-                            <YoutubeButton href='@stellive_official' primary_color='#516794'/>
-                            <TwitterButton href='StelLive_kr' primary_color='#516794'/>
-                            <ButtonBase secondary_color='stellight' href='https://stellight.fans/#/schedule' primary_color="#516794" name='StelLight'  /> {/*<- 아니 색깔 다르면 출력되고 이게 말인가 */}
+                            <NaverButton href='tteokbokk1' primary_color='primary'/>
+                            <TwitchButton href='stellive_official' primary_color='primary'/>
+                            <YoutubeButton href='@stellive_official' primary_color='primary'/>
+                            <TwitterButton href='StelLive_kr' primary_color='primary'/>
+                            <ButtonBase secondary_color='stellight' href='https://stellight.fans/#/schedule' primary_color="primary" name='StelLight'  /> {/*<- 아니 색깔 다르면 출력되고 이게 말인가 */}
                         </div>
                         <div className='text-center'>
                             <a href='https://github.com/Ich-mag-dich/im_pastel' target='blank'>

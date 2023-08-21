@@ -12,7 +12,7 @@ export interface IButtonProps {
     primary_color : string
 }
 
-const primary = {
+const primary : {[key:string] : string } = {
   primary : 'border-primary xl:text-primary',
   kanna : 'border-kanna xl:text-kanna',
   yuni : 'border-yuni xl:text-yuni',
@@ -22,7 +22,7 @@ const primary = {
   mashiro : 'border-mashiro xl:text-mashiro',
 }
 
-const secondary = {
+const secondary : {[key:string] : string } = {
   stellight : 'xl:hover:bg-stellight text-stellight',
   youtube : 'xl:hover:bg-youtube text-youtube',
   twitter : 'xl:hover:bg-twitter text-twitter',
