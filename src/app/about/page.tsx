@@ -43,8 +43,7 @@ export default function About() {
                             <TwitchButton href='stellive_official' primary_color='#516794'/>
                             <YoutubeButton href='@stellive_official' primary_color='#516794'/>
                             <TwitterButton href='StelLive_kr' primary_color='#516794'/>
-                            <ButtonBase secondary_color='#9ab6f0' href='https://stellight.fans/#/schedule' primary_color="#516794" name='StelLight'  /> {/*<- 아니 색깔 다르면 출력되고 이게 말인가 */}
-
+                            <ButtonBase secondary_color='stellight' href='https://stellight.fans/#/schedule' primary_color="#516794" name='StelLight'  /> {/*<- 아니 색깔 다르면 출력되고 이게 말인가 */}
                         </div>
                         <div className='text-center'>
                             <a href='https://github.com/Ich-mag-dich/im_pastel' target='blank'>
