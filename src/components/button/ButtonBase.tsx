@@ -1,15 +1,15 @@
 import React from "react"
 
 interface IButtonBaseProps {
-    href: string
-    name : string
-    primary_color : string
-    secondary_color : string
+  href: string
+  name: string
+  primary_color: string
+  secondary_color: string
 }
 
 export interface IButtonProps {
-    href : string;
-    primary_color : string
+  href: string;
+  primary_color: string
 }
 
 const primary : {[key:string] : string } = {
@@ -41,10 +41,12 @@ const ButtonBase = (props : IButtonBaseProps) => {
   const buttonStyle = `w-[150px] my-2 h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl duration-300 border-2 
 xl:mx-2 xl:hover:border-white xl:hover:text-white xl:hover:cursor-pointer ${primaryclass} ${secondaryclass}
 `
+
   return (
     <a className={buttonStyle} href={props.href} target="blank">
-        {props.name}
+      {props.name}
     </a>
-)}
+  )
+}
 
 export default ButtonBase
