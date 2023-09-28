@@ -10,6 +10,7 @@ interface IButtonBaseProps {
 export interface IButtonProps {
     href : string;
     primary_color : string
+    name? : string
 }
 
 const primary : {[key:string] : string } = {
@@ -38,7 +39,7 @@ const ButtonBase = (props : IButtonBaseProps) => {
 
 
 
-  const buttonStyle = `w-[150px] my-2 h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl duration-300 border-2 
+  const buttonStyle = `w-[150px] my-2 h-[50px] px-[25px] py-[10px] text-center transition rounded-2xl duration-300 border-2 select-none
 xl:mx-2 xl:hover:border-white xl:hover:text-white xl:hover:cursor-pointer ${primaryclass} ${secondaryclass}
 `
   return (
